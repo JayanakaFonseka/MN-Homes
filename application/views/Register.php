@@ -1,9 +1,16 @@
-<?php include 'partials/header.php'; ?>
+    <?php if ($this->session->userdata('loggedin')) {
+      include 'loggedin/header.php';
+    }
+    else{
+       include 'partials/header.php';
+    }
+
+    ?>
 
 
 <div class="container">
 
-	<h1>Register</h1>
+	<h1 class="mt-4 mb-3">Register</h1>
 
 	<?php if ($this->session->flashdata('msg')) {
 		echo "<h3>".$this->session->flashdata('msg')."</h3>";
@@ -16,6 +23,7 @@
 	<?php echo validation_errors(); ?>
 	<?php echo form_open('Register/RegisterUser'); ?>
 
+	<div class="col-lg-6">
 	  <div class="form-group">
 	    <label for="exampleInputEmail1">First Name</label>
 	    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="First name" name="fname">
@@ -39,9 +47,10 @@
 	  	<div class="form-group">
 	      <label for="exampleInputEmail1">User Type</label>
 	      <select class="form-control" name="user_type">
+	      	<option value="site officer" selected="selected" disabled="disabled">Select User Type</option>
+	        <option value="manager">Manager</option>
 	        <option value="site officer">Site officer</option>
 	        <option value="accountant">Accountant</option>
-	        <option value="manager">Manager</option>
 	        <option value="customer">Customer</option>
 	      </select>
 	    </div>
@@ -73,6 +82,7 @@
 	  <div class="form-group">
 	    <label for="exampleInputPassword1">Confirm Password</label>
 	    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password" name="confirmpassword">
+	  </div>
 	  </div>
 
 	  <button type="submit" class="btn btn-default">Submit</button>

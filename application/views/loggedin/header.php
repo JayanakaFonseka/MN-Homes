@@ -12,7 +12,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="<?php echo base_url(); ?>assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="<?php echo base_url(); ?>assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="<?php echo base_url(); ?>assets/css/modern-business.css" rel="stylesheet">
 
@@ -47,7 +47,7 @@
                 <?php echo $this->session->userdata('fname'). " " .$this->session->userdata('lname'); ?>
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                <a class="dropdown-item" href="">1 Profile</a>
+                <a class="dropdown-item" href="<?php echo base_url('Manager/Home'); ?>">1 Profile</a>
                 <a class="dropdown-item" href="<?php echo base_url('Login/logout'); ?>">2 Logout</a>
               </div>
             </li>          

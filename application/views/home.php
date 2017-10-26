@@ -1,4 +1,12 @@
-<?php include 'partials/header.php'; ?>
+    <?php if ($this->session->userdata('loggedin')) {
+      include 'loggedin/header.php';
+    }
+    else{
+       include 'partials/header.php';
+    }
+
+    ?>
+
 
 <div class="container">
 

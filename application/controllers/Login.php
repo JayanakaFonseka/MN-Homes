@@ -33,9 +33,9 @@ class Login extends CI_Controller
                 'contactno' => $result->Contact_No,
                 'user_type' => $result->UserType,
                 'gender' => $result->Gender,
-          			'email' => $result->email,
+          			'email' => $result->Email,
           			'loggedin' => TRUE
-
+                
           			);
 
           		#Starting a session with user data
@@ -48,13 +48,13 @@ class Login extends CI_Controller
                   redirect('Manager/Home');
                   break;
                 case 'accountant':
-                  redirect('');
+                  redirect('Accountant/Home');
                   break;
                 case 'site officer':
-                  redirect('');
+                  redirect('SiteOfficer/Home');
                   break;
                 case 'customer':
-                  redirect('');
+                  redirect('Customer/Home');
                   break;
                 default:
                   # code...
