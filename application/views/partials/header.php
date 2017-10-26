@@ -15,7 +15,6 @@
 
     <!-- Custom styles for this template -->
     <link href="<?php echo base_url(); ?>assets/css/modern-business.css" rel="stylesheet">
-
   </head>
 
   <body>
@@ -36,7 +35,7 @@
               <a class="nav-link" href="<?php echo base_url('Home/about'); ?>">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="services.html">Services</a>
+              <a class="nav-link" href="<?php echo base_url('Home/services'); ?>">Services</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="<?php echo base_url('Home/contact'); ?>">Contact</a>

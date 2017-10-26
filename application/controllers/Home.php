@@ -30,4 +30,9 @@ class Home extends CI_Controller {
 		$this->load->view('Contact');
 	}
 
+	public function services()
+	{	
+		$this->load->view('Services');
+	}
+
 }

@@ -45,7 +45,7 @@ class Login extends CI_Controller
 
               switch ($type) {
                 case 'manager':
-                  redirect('Manager/index');
+                  redirect('Manager/Home');
                   break;
                 case 'accountant':
                   redirect('');

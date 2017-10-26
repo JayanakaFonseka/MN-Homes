@@ -1,6 +1,6 @@
 <?php include 'partials/header.php'; ?>
 
-<div class="container">
+<div class="container" style="min-height: 402px;">
 
 	<h1 class="mt-4 mb-3">Login</h1>
 
@@ -14,7 +14,7 @@
 	<?php echo validation_errors(); ?>
 	<?php echo form_open('Login/LoginUser'); ?>
 
-
+	<div class="col-lg-6">
 	  <div class="form-group">
 	    <label for="exampleInputEmail1">Email address</label>
 	    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" name="email">
@@ -28,7 +28,7 @@
 	  <button type="submit" class="btn btn-default">Submit</button>
 
 	<?php echo form_close(); ?>
-
+</div>
 </div>
 
 <?php include 'partials/footer.php'; ?>

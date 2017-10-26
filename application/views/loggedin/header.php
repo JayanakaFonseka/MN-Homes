@@ -36,14 +36,11 @@
               <a class="nav-link" href="<?php echo base_url('Home/about'); ?>">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="services.html">Services</a>
+              <a class="nav-link" href="<?php echo base_url('Home/services'); ?>">Services</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="<?php echo base_url('Home/contact'); ?>">Contact</a>
             </li>
-            <!--  <li class="nav-item">
-              <a class="nav-link" href="<?php echo base_url('Home/login'); ?>">Login</a>
-            </li>  -->
 
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -51,10 +48,9 @@
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
                 <a class="dropdown-item" href="">1 Profile</a>
-                <a class="dropdown-item" href="<?php echo base_url('Login/logout'); ?>">2 Log out</a>
+                <a class="dropdown-item" href="<?php echo base_url('Login/logout'); ?>">2 Logout</a>
               </div>
-            </li>
-                        
+            </li>          
           </ul>
         </div>
       </div>
