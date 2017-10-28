@@ -29,8 +29,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <!--  <a class="nav-link" href="<?php #echo base_url('Home/register'); ?>">Register</a>
+            <!--<li class="nav-item">
+              <a class="nav-link" href="<?php #echo base_url('Home/register'); ?>">Register</a>
             </li>  -->
             <li class="nav-item">
               <a class="nav-link" href="<?php echo base_url('Home/about'); ?>">About</a>

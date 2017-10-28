@@ -18,7 +18,7 @@
             <a href="<?php echo base_url('Manager/Home'); ?>" class="list-group-item">Profile</a>
             <a href="<?php echo base_url('Register/RegisterUser'); ?>" class="list-group-item">Register New User</a>
             <a href="<?php echo base_url('ManageUsers/viewUsers'); ?>" class="list-group-item active">Manage User</a>
-            <a href="services.html" class="list-group-item">Project Details</a>
+            <a href="<?php echo base_url('Projects/viewProjects'); ?>" class="list-group-item">Project Details</a>
             <a href="contact.html" class="list-group-item">User comments/masseges</a>
             <a href="contact.html" class="list-group-item">View Progress</a>
             <a href="contact.html" class="list-group-item">View Reports</a>
