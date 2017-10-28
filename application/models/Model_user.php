@@ -46,4 +46,21 @@ class Model_user extends CI_Model
 		}
 
 	}
+
+	function RemoveUser($user_id) {
+
+        $this->db->where('id',$user_id);
+        $this->db->delete('employee');
+    }
+
+   	function getUsers() {
+		
+		$this->db->select('*');
+		$this->db->from('employee');
+		$this->db->order_by('id');
+		$query = $this->db->get();
+        return $query->result(); 
+        
+    }
+
 }

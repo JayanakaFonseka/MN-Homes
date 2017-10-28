@@ -12,7 +12,7 @@ class Register extends CI_Controller
     $this->form_validation->set_rules('user_type', 'User Type', 'required');
     $this->form_validation->set_rules('gender', 'Gender', 'required');
 		$this->form_validation->set_rules('email', 'Email', 'required|valid_email|is_unique[employee.email]');
-		$this->form_validation->set_rules('password', 'Password', 'required');
+		$this->form_validation->set_rules('password', 'Password', 'required|min_length[5]');
 		$this->form_validation->set_rules('confirmpassword', 'Confirm Password', 'required|matches[password]');
 
 		#If tha validations fails --> view again registration page
@@ -24,7 +24,7 @@ class Register extends CI_Controller
        	#If tha validations passes --> load the model 'Model_user[insertUserdata function]'
         else{
 
-          	$this->load->model('Model_user');
+          $this->load->model('Model_user');
          	$response = $this->Model_user->insertUserdata(); 
 
           	if ($response){
@@ -38,6 +38,6 @@ class Register extends CI_Controller
               	redirect('Home/Register');
          	}
 
-        }
+      }
 	}
 }
