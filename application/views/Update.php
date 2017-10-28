@@ -14,7 +14,7 @@
 
 <div class="col-md-6" style="margin-top: 30px; ">
 
-    <?php echo form_open('Remove/editUser/'.$row->id); ?>
+    <?php echo form_open('ManageUsers/editUser/'.$row->id); ?>
 
             <div class="form-group">
             <label for="sid">User ID</label>
