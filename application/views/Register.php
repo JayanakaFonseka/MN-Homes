@@ -18,7 +18,7 @@
           <div class="list-group text-center" >
             <a href="<?php echo base_url('Manager/Home'); ?>" class="list-group-item">Profile</a>
             <a href="<?php echo base_url('Register/RegisterUser'); ?>" class="list-group-item active">Register New User</a>
-            <a href="<?php echo base_url('Remove/viewUsers'); ?>" class="list-group-item">Remove User</a>
+            <a href="<?php echo base_url('Remove/viewUsers'); ?>" class="list-group-item">Manage User</a>
             <a href="services.html" class="list-group-item">Project Details</a>
             <a href="contact.html" class="list-group-item">User comments/masseges</a>
             <a href="contact.html" class="list-group-item">View Progress</a>
@@ -59,6 +59,11 @@
 			  </div>
 
 			  <div class="form-group">
+			    <label for="exampleInputEmail1">Email address</label>
+			    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" name="email">
+			  </div>
+
+			  <div class="form-group">
 			    <label for="exampleInputEmail1">Contact Number</label>
 			    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Contact Number" name="contactno">
 			  </div>
@@ -66,7 +71,7 @@
 			  	<div class="form-group">
 			      <label for="exampleInputEmail1">User Type</label>
 			      <select class="form-control" name="user_type">
-			      	<option value="site officer" selected="selected" disabled="disabled">Select User Type</option>
+			      	<option value="" selected="selected" disabled="disabled">Select User Type</option>
 			        <option value="manager">Manager</option>
 			        <option value="site officer">Site officer</option>
 			        <option value="accountant">Accountant</option>
@@ -74,24 +79,19 @@
 			      </select>
 			    </div>
 
-			    <label class="form-group">Gender:</label>
+			    <label class="form-group">Gender</label>
 		  			<div class="form-group"> 
-		       		<div class="col-sm-3">
+		       		<div class="col-sm-5">
 		            	<label class="radio-inline">
 		                 <input name="gender" id="input-gender-male" value="Male" type="radio" />  Male
 		             	</label>
 		        	</div>
-		        	<div class="col-sm-3">
+		        	<div class="col-sm-5">
 		             	<label class="radio-inline">
 		                  <input name="gender" id="input-gender-female" value="Female" type="radio" />  Female
 		             	</label>
 		         	</div>
 		   		</div>
-
-			  <div class="form-group">
-			    <label for="exampleInputEmail1">Email address</label>
-			    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" name="email">
-			  </div>
 
 			  <div class="form-group">
 			    <label for="exampleInputPassword1">Password</label>
@@ -103,6 +103,7 @@
 			    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password" name="confirmpassword">
 			  </div>
 			  </div>
+			  <hr>
 
 			  <button type="submit" class="btn btn-default">Submit</button>
 

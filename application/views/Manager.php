@@ -30,7 +30,7 @@
           <div class="list-group text-center" >
             <a href="<?php echo base_url('Manager/Home'); ?>" class="list-group-item active">Profile</a>
             <a href="<?php echo base_url('Register/RegisterUser'); ?>" class="list-group-item">Register New User</a>
-            <a href="<?php echo base_url('Remove/viewUsers'); ?>" class="list-group-item">Remove User</a>
+            <a href="<?php echo base_url('Remove/viewUsers'); ?>" class="list-group-item">Manage User</a>
             <a href="services.html" class="list-group-item">Project Details</a>
             <a href="contact.html" class="list-group-item">User comments/masseges</a>
             <a href="contact.html" class="list-group-item">View Progress</a>
