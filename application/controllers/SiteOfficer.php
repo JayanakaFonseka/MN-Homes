@@ -10,12 +10,24 @@ class SiteOfficer extends CI_Controller
 	{
 		$this->load->view('siteofficer/SiteOfficer');
 	}
-    public function labour_att()
+    public function markattendance()
     {
-        $this->load->view('labour_att');
+        $this->load->view('siteofficer/Markattendance');
     }
     public function new_month()
     {
         $this->load->model('siteofficer_model');
+    }
+    public function projectprogress()
+    {
+        $this->load->view('siteofficer/projectprogress');
+    }
+    public function inventryrequest()
+    {
+        $this->load->view('siteofficer/inventryrequest');
+    }
+    public function monthlyprojectreport()
+    {
+        $this->load->view('siteofficer/monthlyprojectreport');
     }
 }
