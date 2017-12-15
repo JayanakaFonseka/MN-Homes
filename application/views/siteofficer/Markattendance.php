@@ -43,6 +43,8 @@
 
       </div>
       <!-- /.row -->
+</div>
+</div>
 
     </div>
     <!-- /.container -->

@@ -39,6 +39,9 @@
         <!-- Content Column -->
         <div class="col-lg-9 mb-4">
           
+</div>
+</div>
+</div>
 
 
       </div>

@@ -46,5 +46,5 @@
 
     </div>
     <!-- /.container -->
-
+</div>
 <?php include 'loggedin/footer.php'; ?>
