@@ -8,7 +8,7 @@ class Manager extends CI_Controller
 	
 	public function Home()
 	{
-		$this->load->view('Manager');
+		$this->load->view('manager/Manager');
 	}
 
 	public function RegisterUser()

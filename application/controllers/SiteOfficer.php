@@ -8,7 +8,7 @@ class SiteOfficer extends CI_Controller
 	
 	public function Home()
 	{
-		$this->load->view('SiteOfficer');
+		$this->load->view('siteofficer/SiteOfficer');
 	}
     public function labour_att()
     {

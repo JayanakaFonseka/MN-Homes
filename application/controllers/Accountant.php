@@ -8,11 +8,11 @@ class Accountant extends CI_Controller
 	
 	public function Home()
 	{
-		$this->load->view('Accountant.php');
+		$this->load->view('accountant/Accountant');
 	}
     public function add_labour()
     {
-        $this->load->view('acc_addlabour.php');
+        $this->load->view('accountant/acc_addlabour');
     }
     public function add_labour_det()
     {
@@ -27,7 +27,7 @@ class Accountant extends CI_Controller
             #If tha validations fails --> view again registration page
             if ($this->form_validation->run() == FALSE){
 
-                $this->load->view('acc_addlabour.php');
+                $this->load->view('accountant/acc_addlabour');
             }
 
             #If tha validations passes --> load the model account model [add labour function]'
