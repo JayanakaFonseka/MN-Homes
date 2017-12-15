@@ -20,7 +20,6 @@ else{
         <li class="breadcrumb-item">
             <a href="<?php echo base_url(); ?>">Home</a>
         </li>
-        <li class="breadcrumb-item active">Profile</li>
     </ol>
 
     <!-- Content Row -->
@@ -28,11 +27,12 @@ else{
         <!-- Sidebar Column -->
         <div class="col-lg-3 mb-4">
             <div class="list-group text-center" >
+                <a href="<?php echo base_url('Accountant/Home'); ?>" class="list-group-item">Profile</a>
                 <a href="" class="list-group-item">View Attendence</a>
                 <a href="" class="list-group-item">Yard Inventries</a>
                 <a href="" class="list-group-item">Project Details</a>
                 <a href="" class="list-group-item">Pay-sheets</a>
-                <a href="<?php echo base_url('Accountant/add_labour'); ?>" class="list-group-item">Add labour</a>
+                <a href="<?php echo base_url('Accountant/add_labour'); ?>" class="list-group-item active">Add labour</a>
                 <a href="" class="list-group-item">View Reports</a>
                 <a href="" class="list-group-item">View Progress</a>
             </div>

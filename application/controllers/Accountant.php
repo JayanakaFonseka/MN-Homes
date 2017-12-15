@@ -13,7 +13,6 @@ class Accountant extends CI_Controller
     public function add_labour()
     {
         $this->load->view('accountant/acc_addlabour');
-
 	}
 
     public function add_labour_det()
@@ -35,8 +34,8 @@ class Accountant extends CI_Controller
             #If tha validations passes --> load the model account model [add labour function]'
             else{
 
-                $this->load->model('acc_model');
-                $response = $this->acc_model->add_labour_det();
+                $this->load->model('Model_accountant');
+                $response = $this->Model_accountant->add_labour_det();
 
                 if ($response){
 
