@@ -13,7 +13,9 @@ class Accountant extends CI_Controller
     public function add_labour()
     {
         $this->load->view('accountant/acc_addlabour');
-    }
+
+	}
+
     public function add_labour_det()
     {
         {
