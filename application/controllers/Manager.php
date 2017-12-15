@@ -61,7 +61,7 @@ class Manager extends CI_Controller
 
   		$this->load->model('Model_manager');
   		$this->Model_manager->RemoveUser($user_id);
-  		redirect('ManageUsers/viewUsers');
+  		redirect('Manager/viewUsers');
        
 	}
 	
@@ -79,10 +79,10 @@ class Manager extends CI_Controller
 		if (isset($_POST['update'])) {
 			if ($this->Model_manager->update($stu_id)) {
 				$this->session->set_flashdata('success','Student is updated');
-				redirect('ManageUsers/viewUsers/');	
+				redirect('Manager/viewUsers/');	
 			} else {
 				$this->session->set_flashdata('error','Student is not updated');
-				redirect('ManageUsers/viewUsers/');
+				redirect('Manager/viewUsers/');
 			}
 		}
 
@@ -97,6 +97,32 @@ class Manager extends CI_Controller
 		$data['records'] = $this->Model_manager->Search($searchkey);
 		$this->load->view('manager/ManageUsers', $data);
 		
+	}
+
+
+	function viewMessages() {
+		$this->load->model('Model_manager');
+		$records = $this->Model_manager->getMessages();
+		$this->load->view('Messages', ['records' => $records]);
+		
+	}
+
+
+	function ContactUser(){
+		$this->form_validation->set_rules('email', 'Email', 'required|valid_email');
+
+		if ($this->form_validation->run() == FALSE){
+			
+			$this->load->view('Contact');
+       	}
+
+        else{
+
+          	$this->load->model('Model_user');
+          	$this->Model_user->ContactUser();
+          	redirect('Home/Contact');
+
+        }
 	}
 
 

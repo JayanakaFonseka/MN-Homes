@@ -1,4 +1,4 @@
-    <?php if ($this->session->userdata('loggedin')) {
+<?php if ($this->session->userdata('loggedin')) {
       include 'loggedin/header.php';
     }
     else{

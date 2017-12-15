@@ -16,8 +16,8 @@
         <!-- Sidebar Column -->
         <div class="col-lg-3 mb-4">
           <div class="list-group text-center" >
-            <a href="<?php echo base_url('Manager/Home'); ?>" class="list-group-item active">Profile</a>
-            <a href="<?php echo base_url('Manager/RegisterUser'); ?>" class="list-group-item">Register New User</a>
+            <a href="<?php echo base_url('Manager/Home'); ?>" class="list-group-item">Profile</a>
+            <a href="<?php echo base_url('Manager/RegisterUser'); ?>" class="list-group-item active">Register New User</a>
             <a href="<?php echo base_url('Manager/viewUsers'); ?>" class="list-group-item">Manage User</a>
             <a href="<?php echo base_url('Manager/viewProjects'); ?>" class="list-group-item">Project Details</a>
             <a href="contact.html" class="list-group-item">User Masseges</a>
@@ -38,7 +38,7 @@
 
 			
 			<?php echo validation_errors(); ?>
-			<?php echo form_open('Register/RegisterUser'); ?>
+			<?php echo form_open('Manager/RegisterUser'); ?>
 
 		<div class="row">
 			<div class="col-lg-6">

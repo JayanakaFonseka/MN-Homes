@@ -15,9 +15,9 @@
         <!-- Sidebar Column -->
         <div class="col-lg-3 mb-4">
           <div class="list-group text-center" >
-            <a href="<?php echo base_url('Manager/Home'); ?>" class="list-group-item active">Profile</a>
+            <a href="<?php echo base_url('Manager/Home'); ?>" class="list-group-item">Profile</a>
             <a href="<?php echo base_url('Manager/RegisterUser'); ?>" class="list-group-item">Register New User</a>
-            <a href="<?php echo base_url('Manager/viewUsers'); ?>" class="list-group-item">Manage User</a>
+            <a href="<?php echo base_url('Manager/viewUsers'); ?>" class="list-group-item active">Manage User</a>
             <a href="<?php echo base_url('Manager/viewProjects'); ?>" class="list-group-item">Project Details</a>
             <a href="contact.html" class="list-group-item">User Masseges</a>
             <a href="contact.html" class="list-group-item">View Reports</a>
@@ -57,8 +57,8 @@
                 <td><?php echo "$row->Fname $row->Lname" ?></td>
                 <td><?php echo $row->Email; ?></td>
                 <td><?php echo $row->UserType; ?></td>
-                <th><a href="<?php echo base_url('ManageUsers/editUser/'.$row->id) ?>"><button type='submit' class='btn btn-warning'>Update</button></th></a>
-                <th><a href="<?php echo base_url('ManageUsers/RemoveUser/'.$row->id) ?>"><button type='submit' class='btn btn-danger'>Delete</button></th></a>
+                <th><a href="<?php echo base_url('Manager/editUser/'.$row->id) ?>"><button type='submit' class='btn btn-warning'>Update</button></th></a>
+                <th><a href="<?php echo base_url('Manager/RemoveUser/'.$row->id) ?>"><button type='submit' class='btn btn-danger'>Delete</button></th></a>
             </tr>
 
             <?php endforeach; ?>

@@ -97,4 +97,15 @@ class Model_manager extends CI_Model
         return $query->result();
 	}
 
+
+	public function getMessages() {
+		
+		$this->db->select('*');
+		$this->db->from('messages');
+		$this->db->order_by('id', 'DESC');
+		$query = $this->db->get();
+    	return $query->result(); 
+        
+    }
+
 }
