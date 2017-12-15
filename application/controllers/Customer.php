@@ -14,7 +14,7 @@ class Customer extends CI_Controller
 	public function viewProjects()
 	{
 		$this->load->model('Model_customer');
-		$records = $this->Model_customer->getProjects();
+		$records = $this->Model_customer->getProjects($_SESSION['user_id']);
 		$this->load->view('customer/Projects', ['records' => $records]);
 	}
 
