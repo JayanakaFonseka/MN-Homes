@@ -51,4 +51,9 @@ class Accountant extends CI_Controller
             }
         }
     }
+    public function view_attendance()
+    {
+        $this->load->view('accountant/acc_attendance');
+    }
+
 }
