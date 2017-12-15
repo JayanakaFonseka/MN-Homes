@@ -28,13 +28,12 @@
         <!-- Sidebar Column -->
         <div class="col-lg-3 mb-4">
           <div class="list-group text-center" >
+            <a href="" class="list-group-item">Profile</a>
             <a href="<?php echo base_url('SiteOfficer/labour_att'); ?>" class="list-group-item">Mark Attendence</a>
-            <a href="" class="list-group-item">Site Report</a>
-            <a href="" class="list-group-item">Project Details</a>
+            <a href="" class="list-group-item">Project progress</a>
             <a href="" class="list-group-item">Inventry Requests</a>
-            <a href="" class="list-group-item">Site Progress</a>
-            <a href="" class="list-group-item">Manage Labours</a>
-            <a href="" class="list-group-item">Site Officer</a>
+            <a href="" class="list-group-item">Monthly Project Report</a>
+
           </div>
         </div>
         <!-- Content Column -->
