@@ -30,10 +30,17 @@
 
 <h1 >Stored users in Databse</h1>
 	
-	<hr>
-    <div class="col-lg-6">
-    <table class="table table-striped">
-
+	<hr>   
+            <?php echo form_open('ManageUsers/searchUsers',['class'=>'form-inline']); ?>
+            <div class="form-group ">
+                <input type="text" class="form-control col-lg-8 " id="exampleInputEmail1" placeholder="Enter any keyword.." name="search">&nbsp;&nbsp;&nbsp;&nbsp;
+                <button type="submit" class="btn btn-default">Search</button>
+            </div>
+            <?php echo form_close(); ?>
+            <br>
+            
+    <div class="table-responsive table-striped">
+    <table class="table">
         <tr>
             <th class="text-center">Reg No</th>
             <th>&nbsp;&nbsp;&nbsp;&nbsp;Name</th>
@@ -64,6 +71,7 @@
 
     </table>
     </div>
+
 </div>
 </div>
 </div>

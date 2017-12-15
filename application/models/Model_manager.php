@@ -44,7 +44,6 @@ class Model_user extends CI_Model
 			return FALSE;
 
 		}
-
 	}
 
 	function RemoveUser($user_id) {
@@ -100,5 +99,22 @@ class Model_user extends CI_Model
 
         return $stu_id;
     }
+
+    function Search($searchkey){
+
+    	$this->db->select('*');
+		$this->db->from('employee');
+
+		$this->db->like('Fname', $searchkey);
+		$this->db->or_like('Lname', $searchkey);
+		$this->db->or_like('Address', $searchkey);
+		$this->db->or_like('Contact_No', $searchkey);
+		$this->db->or_like('UserType', $searchkey);
+		$this->db->or_like('Gender', $searchkey);
+		$this->db->or_like('Email', $searchkey);
+
+		$query = $this->db->get();
+        return $query->result();
+	}
 
 }

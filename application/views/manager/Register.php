@@ -42,6 +42,7 @@
 			<?php echo validation_errors(); ?>
 			<?php echo form_open('Register/RegisterUser'); ?>
 
+		<div class="row">
 			<div class="col-lg-6">
 			  <div class="form-group">
 			    <label for="exampleInputEmail1">First Name</label>
@@ -63,7 +64,27 @@
 			    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" name="email">
 			  </div>
 
+			  
+
+			    
+
 			  <div class="form-group">
+			    <label for="exampleInputPassword1">Password</label>
+			    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
+			  </div>
+
+			  <div class="form-group">
+			    <label for="exampleInputPassword1">Confirm Password</label>
+			    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password" name="confirmpassword">
+			  </div>
+			  </div>
+
+			  <div class="col-lg-6">
+			  	<div class="profile-header-img">
+                	<img class="img-circle" src="<?php echo base_url(); ?>assets/images/profile.jpg" style="width: 200px; height: 200px; margin-left: 100px; margin-bottom: 50px" />
+              	</div>
+
+              	<div class="form-group">
 			    <label for="exampleInputEmail1">Contact Number</label>
 			    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Contact Number" name="contactno">
 			  </div>
@@ -93,19 +114,11 @@
 		         	</div>
 		   		</div>
 
-			  <div class="form-group">
-			    <label for="exampleInputPassword1">Password</label>
-			    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
-			  </div>
 
-			  <div class="form-group">
-			    <label for="exampleInputPassword1">Confirm Password</label>
-			    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password" name="confirmpassword">
-			  </div>
-			  </div>
+              </div>
 			  <hr>
 
-			  <button type="submit" class="btn btn-default">Submit</button>
+			  <button type="submit" class="btn btn-success">Submit</button>
 
 			  <?php echo form_close(); ?>
 
