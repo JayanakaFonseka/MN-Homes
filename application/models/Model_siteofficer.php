@@ -1,6 +1,6 @@
 <?php
 
-class siteofficer_model extends CI_Model
+class Model_siteofficer extends CI_Model
 {
 
     function new_month()

@@ -3,7 +3,7 @@
 /**
 * 
 */
-class Model_user extends CI_Model
+class Model_manager extends CI_Model
 {
 	
 	function insertUserdata()

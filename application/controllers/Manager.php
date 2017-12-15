@@ -26,14 +26,14 @@ class Manager extends CI_Controller
 		#If tha validations fails --> view again registration page
 		if ($this->form_validation->run() == FALSE){
 
-			$this->load->view('Register');
+			$this->load->view('manager/Register');
        	}
 
-       	#If tha validations passes --> load the model 'Model_user[insertUserdata function]'
+       	#If tha validations passes --> load the model 'Model_manager[insertUserdata function]'
         else{
 
-          $this->load->model('Model_user');
-         	$response = $this->Model_user->insertUserdata(); 
+          $this->load->model('Model_manager');
+         	$response = $this->Model_manager->insertUserdata(); 
 
           	if ($response){
 
@@ -50,34 +50,34 @@ class Manager extends CI_Controller
 	}
 
 	public function viewProjects() {
-		$this->load->model('Model_user');
-		$records = $this->Model_user->getProjects();
-		$this->load->view('Projects', ['records' => $records]);
+		$this->load->model('Model_manager');
+		$records = $this->Model_manager->getProjects();
+		$this->load->view('manager/Projects', ['records' => $records]);
 		
 	}
 
 
 	public function RemoveUser($user_id) {
 
-  		$this->load->model('Model_user');
-  		$this->Model_user->RemoveUser($user_id);
+  		$this->load->model('Model_manager');
+  		$this->Model_manager->RemoveUser($user_id);
   		redirect('ManageUsers/viewUsers');
        
 	}
 	
 	public function viewUsers() {
-		$this->load->model('Model_user');
-		$data['records'] = $this->Model_user->getUsers();
-		$this->load->view('ManageUsers', $data);
+		$this->load->model('Model_manager');
+		$data['records'] = $this->Model_manager->getUsers();
+		$this->load->view('manager/ManageUsers', $data);
 		
 	}
 
 	public function editUser($stu_id) {
 
-		$this->load->model('Model_user');
+		$this->load->model('Model_manager');
 
 		if (isset($_POST['update'])) {
-			if ($this->Model_user->update($stu_id)) {
+			if ($this->Model_manager->update($stu_id)) {
 				$this->session->set_flashdata('success','Student is updated');
 				redirect('ManageUsers/viewUsers/');	
 			} else {
@@ -86,16 +86,16 @@ class Manager extends CI_Controller
 			}
 		}
 
-		$data['row'] = $this->Model_user->edit($stu_id);
-		$this->load->view('Update',$data);
+		$data['row'] = $this->Model_manager->edit($stu_id);
+		$this->load->view('manager/Update',$data);
 		
 	}
 
 	public function searchUsers() {
 		$searchkey = $this->input->post('search');
-		$this->load->model('Model_user');
-		$data['records'] = $this->Model_user->Search($searchkey);
-		$this->load->view('ManageUsers', $data);
+		$this->load->model('Model_manager');
+		$data['records'] = $this->Model_manager->Search($searchkey);
+		$this->load->view('manager/ManageUsers', $data);
 		
 	}
 

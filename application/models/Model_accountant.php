@@ -1,5 +1,5 @@
 <?php
-class acc_model extends CI_Model
+class Model_accountant extends CI_Model
 {
     function add_labour_det()
     {
