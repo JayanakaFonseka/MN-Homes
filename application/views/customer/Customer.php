@@ -28,13 +28,13 @@
         <!-- Sidebar Column -->
         <div class="col-lg-3 mb-4">
           <div class="list-group text-center" >
-            <a href="" class="list-group-item">View Progress</a>
+            <a href="<?php echo base_url('Customer/Home'); ?>" class="list-group-item">Profile</a>
+            <a href="<?php echo base_url('Customer/viewProjects'); ?>" class="list-group-item">Project Details</a>
+						<a href="" class="list-group-item">View Progress</a>
             <a href="" class="list-group-item">Complains</a>
-            <a href="" class="list-group-item">Project Details</a>
             <a href="" class="list-group-item">Send masseges</a>
             <a href="" class="list-group-item">Milestones</a>
             <a href="" class="list-group-item">View Reports</a>
-            <a href="" class="list-group-item">Customer</a>
           </div>
         </div>
         <!-- Content Column -->
@@ -63,7 +63,7 @@
                                 <tr>
                                     <td><i class="fa fa-phone" aria-hidden="true"></i> Mobile</td>
                                     <td><?php echo $_SESSION['contactno']; ?></td>
-                                </tr>                                
+                                </tr>
                                 <!-- <tr>
                                     <td><i class="fa fa-key" aria-hidden="true"></i>Password</td>
                                     <td><i class="fa fa-lock" aria-hidden="true"></i><a href="<?php #echo site_url('Users/getPassword/'.$_SESSION['user_id']) ?>" class="btn btn-link">Change</a></td>
