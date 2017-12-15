@@ -31,7 +31,7 @@
 <h1 >Stored users in Databse</h1>
 	
 	<hr>
-
+    <div class="col-lg-6">
     <table class="table table-striped">
 
         <tr>
@@ -63,7 +63,7 @@
         <?php endif ?>
 
     </table>
-
+    </div>
 </div>
 </div>
 </div>

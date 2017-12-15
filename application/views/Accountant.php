@@ -32,9 +32,9 @@
             <a href="" class="list-group-item">Yard Inventries</a>
             <a href="" class="list-group-item">Project Details</a>
             <a href="" class="list-group-item">Pay-sheets</a>
-            <a href="" class="list-group-item">View Progress</a>
+            <a href="<?php echo base_url('Accountant/add_labour'); ?>" class="list-group-item">Add labour</a>
             <a href="" class="list-group-item">View Reports</a>
-            <a href="" class="list-group-item">Accountant</a>
+            <a href="" class="list-group-item">View Progress</a>
           </div>
         </div>
         <!-- Content Column -->
