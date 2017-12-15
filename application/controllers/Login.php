@@ -29,10 +29,10 @@ class Login extends CI_Controller
           			'user_id' => $result->id,
           			'fname' => $result->Fname,
           			'lname' => $result->Lname,
-                    'address' => $result->Address,
-                    'contactno' => $result->Contact_No,
-                    'user_type' => $result->UserType,
-                    'gender' => $result->Gender,
+                'address' => $result->Address,
+                'contactno' => $result->Contact_No,
+                'user_type' => $result->UserType,
+                'gender' => $result->Gender,
           			'email' => $result->Email,
           			'loggedin' => TRUE
                 
@@ -79,6 +79,31 @@ class Login extends CI_Controller
 
 
 	}
+
+  function Profile(){
+    
+    $type = $this->session->userdata('user_type');
+
+              switch ($type) {
+                case 'manager':
+                  redirect('Manager/Home');
+                  break;
+                case 'accountant':
+                  redirect('Accountant/Home');
+                  break;
+                case 'site officer':
+                  redirect('SiteOfficer/Home');
+                  break;
+                case 'customer':
+                  redirect('Customer/Home');
+                  break;
+                default:
+                  # code...
+                  break;
+              }
+  }
+
+
 
 	public function logout(){
 		
