@@ -29,10 +29,10 @@ class Login extends CI_Controller
           			'user_id' => $result->id,
           			'fname' => $result->Fname,
           			'lname' => $result->Lname,
-                'address' => $result->Address,
-                'contactno' => $result->Contact_No,
-                'user_type' => $result->UserType,
-                'gender' => $result->Gender,
+                    'address' => $result->Address,
+                    'contactno' => $result->Contact_No,
+                    'user_type' => $result->UserType,
+                    'gender' => $result->Gender,
           			'email' => $result->Email,
           			'loggedin' => TRUE
                 
