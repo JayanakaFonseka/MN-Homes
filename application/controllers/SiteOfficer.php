@@ -34,4 +34,11 @@ class SiteOfficer extends CI_Controller
     {
         $this->load->view('siteofficer/add');
     }
-}
+    
+
+
+            
+ }            
+
+?>
+
