@@ -60,9 +60,11 @@
                 echo "<h3>".$this->session->flashdata('msg')."</h3>";
             }
             ?>
+                  <?php echo validation_errors(); ?>
+                  <?php echo form_open('SiteOfficer/addlabour_det'); ?>
 
-            <?php echo form_open('SiteOfficer/addlabour_det'); ?>
-                          <div class="form-group">
+
+        <div class="form-group">
                 <label for="name">First Name</label>
                 <input type="text" id="labourname" class="form-control" name="fname" required="">
               </div>
@@ -90,14 +92,14 @@
 
               <div class="form-group">
                 <input  type="submit" class="btn btn-success" name="submit" value="Add Labour">
+                                <?php echo form_close(); ?> 
                 <input  type="submit" class="btn btn-primary" name="submit" value="Clear">
 
                
               </div>
 
-              <?php echo form_close(); ?> 
-               <?php echo validation_errors(); ?>
-            
+
+           
           </div>
 
         </div>
