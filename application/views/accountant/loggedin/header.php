@@ -47,8 +47,8 @@
                 <?php echo $this->session->userdata('fname'). " " .$this->session->userdata('lname'); ?>
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                <a class="dropdown-item" href="<?php echo base_url('Accountant/Home'); ?>">1 Profile</a>
-                <a class="dropdown-item" href="<?php echo base_url('Login/logout'); ?>">2 Logout</a>
+                <a class="dropdown-item" href="<?php echo base_url('Accountant/Home'); ?>">Profile</a>
+                <a class="dropdown-item" href="<?php echo base_url('Login/logout'); ?>">Logout</a>
               </div>
             </li>          
           </ul>

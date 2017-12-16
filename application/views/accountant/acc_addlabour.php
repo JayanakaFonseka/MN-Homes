@@ -30,12 +30,12 @@ else{
             <div class="list-group text-center" >
                 <a href="<?php echo base_url('Accountant/Home'); ?>" class="list-group-item">Profile</a>
                 <a href="<?php echo base_url('Accountant/view_attendance'); ?>" class="list-group-item">View Attendence</a>
-                <a href="" class="list-group-item">Yard Inventries</a>
-                <a href="" class="list-group-item">Project Details</a>
+                <a href="<?php echo base_url('Accountant/view_yard'); ?>" class="list-group-item">Yard Details</a>
+                <a href="<?php echo base_url('Accountant/add_yard_item'); ?>" class="list-group-item">Add Yard Item</a>
+                <a href="<?php echo base_url('Accountant/view_project'); ?>" class="list-group-item">Project Details</a>
                 <a href="" class="list-group-item">Pay-sheets</a>
                 <a href="<?php echo base_url('Accountant/add_labour'); ?>" class="list-group-item active">Add labour</a>
                 <a href="" class="list-group-item">View Reports</a>
-                <a href="" class="list-group-item">View Progress</a>
             </div>
         </div>
         <!-- Content Column -->
@@ -53,7 +53,7 @@ else{
 
             <?php echo validation_errors(); ?>
             <?php echo form_open('Accountant/add_labour_det'); ?>
-
+<div class="row">
             <div class="col-lg-6">
                 <div class="form-group">
                     <label for="exampleInputEmail1">First Name</label>
@@ -70,6 +70,9 @@ else{
                     <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Address" name="address">
                 </div>
 
+
+            </div>
+            <div class="col-lg-6">
                 <div class="form-group">
                     <label for="exampleInputEmail1">NIC</label>
                     <input type="text" class="form-control" id="exampleInputEmail1" placeholder="NIC" name="nic">
@@ -94,7 +97,7 @@ else{
                         </label>
                     </div>
                 </div>
-
+            </div>
             </div>
             <hr>
 

@@ -29,12 +29,12 @@ else{
             <div class="list-group text-center" >
                 <a href="<?php echo base_url('Accountant/Home'); ?>" class="list-group-item">Profile</a>
                 <a href="<?php echo base_url('Accountant/view_attendance'); ?>" class="list-group-item active">View Attendence</a>
-                <a href="" class="list-group-item">Yard Inventries</a>
-                <a href="" class="list-group-item">Project Details</a>
+                <a href="<?php echo base_url('Accountant/view_yard'); ?>" class="list-group-item">Yard Details</a>
+                <a href="<?php echo base_url('Accountant/add_yard_item'); ?>" class="list-group-item">Add Yard Item</a>
+                <a href="<?php echo base_url('Accountant/view_project'); ?>" class="list-group-item">Project Details</a>
                 <a href="" class="list-group-item">Pay-sheets</a>
                 <a href="<?php echo base_url('Accountant/add_labour'); ?>" class="list-group-item">Add labour</a>
                 <a href="" class="list-group-item">View Reports</a>
-                <a href="" class="list-group-item">View Progress</a>
             </div>
         </div>
         <!-- Content Column -->
@@ -55,7 +55,7 @@ else{
                 <table class="table">
                     <tr>
                         <th class="text-center">NIC</th>
-                        <th>&nbsp;&nbsp;&nbsp;&nbsp;Name</th>>
+                        <th>&nbsp;&nbsp;&nbsp;&nbsp;Name</th>
                         <th>Month</th>
                         <th>&nbsp;&nbsp;&nbsp;&nbsp;Project ID</th>
                         <th>Attendance</th>
@@ -66,11 +66,11 @@ else{
                         <?php foreach ($records as $row): ?>
 
                             <tr>
-                                <td class="text-center"><?php echo $row->id; ?></td>
+                                <td class="text-center"><?php echo $row->labour_id; ?></td>
                                 <td><?php echo "$row->Fname $row->Lname" ?></td>
-                                <td><?php echo $row->Month; ?></td>
-                                <td><?php echo $row->ProjectID; ?></td>
-                                <td><?php echo $row->Attendance; ?></td>
+                                <td><?php echo $row->month; ?></td>
+                                <td><?php echo $row->project_id; ?></td>
+                                <td><?php echo $row->no_days; ?></td>
 
                             </tr>
 
