@@ -47,7 +47,7 @@
           <div class="panelheading">
             <h2>            
               <a href="view.php" class="btn btn-success pull-right">view all</a>
-              <a href="<?php echo base_url('SiteOfficer/addlabour') ?>" class="btn btn-primary ">Add labour</a>
+              <a href="<?php echo base_url('SiteOfficer/addlabour'); ?>" class="btn btn-primary ">Add labour</a>
             </h2>
 
           </div>

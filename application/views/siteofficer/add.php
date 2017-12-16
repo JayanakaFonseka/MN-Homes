@@ -46,7 +46,7 @@
         <div class="panel panel default">
           <div class="panelheading">
             <h2>            
-              <a href="view.php" class="btn btn-success pull-right">view all</a>
+
               <a href="<?php echo base_url('SiteOfficer/Markattendance'); ?>" class="btn btn-primary ">back</a>
             </h2>
 
@@ -58,32 +58,34 @@
             <form action="" method="post">
               <div class="form-group">
                 <label for="name">First Name</label>
-                <input type="text" id="labourname" name="labourname" required="">
+                <input type="text" id="labourname" class="form-control" name="labourname" required="">
               </div>
               <div class="form-group">
                 <label for="name">Last Name</label>
-                <input type="text" id="labourid" name="labourid" required="">
+                <input type="text" id="labourid" class="form-control" name="labourid" required="">
               </div>
               <div class="form-group">
                 <label for="name">Address</label>
-                <input type="text" id="labourname" name="labourname" required="">
+                <input type="text" id="labourname" class="form-control" name="labourname" required="">
               </div>
               <div class="form-group">
                 <label for="name">NIC</label>
-                <input type="text" id="labourname" name="labourname" required="">
+                <input type="text" id="labourname" class="form-control" name="labourname" required="">
               </div>
               <div class="form-group">
                 <label for="name">Contact Number</label>
-                <input type="text" id="labourname" name="labourname" required="">
+                <input type="text" id="labourname" class="form-control" name="labourname" required="">
               </div>
               <div class="form-group">
                 <label for="name">Gender:</label><br>
                 <input  type="radio" name="gender" value="male"> Male<br>
-                <input type="radio" name="gender" value="female"> Female<br>
+                <input type="radio" name="gender"  value="female"> Female<br>
               </div>
 
               <div class="form-group">
-                <input  type="submit" class="btn btn-primary" name="submit" value="Add Labour"><br>
+                <input  type="submit" class="btn btn-success" name="submit" value="Add Labour">
+                <input  type="submit" class="btn btn-primary" name="submit" value="Clear"
+
                 
               </div>
               
