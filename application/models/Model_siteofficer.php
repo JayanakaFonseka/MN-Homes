@@ -7,7 +7,7 @@ class Model_siteofficer extends CI_Model
     {
         $this->db->query();
     }
-    function insertlabour()
+    function insertlabourdata()
 	{
 		$data = array(
 
