@@ -103,12 +103,13 @@ class Manager extends CI_Controller
 	function viewMessages() {
 		$this->load->model('Model_manager');
 		$records = $this->Model_manager->getMessages();
-		$this->load->view('Messages', ['records' => $records]);
+		$this->load->view('manager/Messages', ['records' => $records]);
 		
 	}
 
 
 	function ContactUser(){
+
 		$this->form_validation->set_rules('email', 'Email', 'required|valid_email');
 
 		if ($this->form_validation->run() == FALSE){
@@ -118,8 +119,8 @@ class Manager extends CI_Controller
 
         else{
 
-          	$this->load->model('Model_user');
-          	$this->Model_user->ContactUser();
+          	$this->load->model('Model_manager');
+          	$this->Model_manager->ContactUser();
           	redirect('Home/Contact');
 
         }

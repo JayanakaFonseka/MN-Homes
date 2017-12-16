@@ -15,12 +15,13 @@
         <!-- Sidebar Column -->
         <div class="col-lg-3 mb-4">
           <div class="list-group text-center" >
-            <a href="<?php echo base_url('Manager/Home'); ?>" class="list-group-item">Profile</a>
+            <a href="<?php echo base_url('Manager/Home'); ?>" class="list-group-item active">Profile</a>
             <a href="<?php echo base_url('Manager/RegisterUser'); ?>" class="list-group-item">Register New User</a>
-            <a href="<?php echo base_url('Manager/viewUsers'); ?>" class="list-group-item active">Manage User</a>
+            <a href="<?php echo base_url('Manager/viewUsers'); ?>" class="list-group-item">Manage User</a>
+            <a href="<?php echo base_url('Manager/Home'); ?>" class="list-group-item">New Project</a>
             <a href="<?php echo base_url('Manager/viewProjects'); ?>" class="list-group-item">Project Details</a>
-            <a href="contact.html" class="list-group-item">User Masseges</a>
-            <a href="contact.html" class="list-group-item">View Reports</a>
+            <a href="<?php echo base_url('Manager/viewMessages'); ?>" class="list-group-item">User Masseges</a>
+            <a href="Manager/Home" class="list-group-item">View Reports</a>
           </div>
         </div>
 
@@ -29,7 +30,7 @@
 <h1 >Stored users in Databse</h1>
 	
 	<hr>   
-            <?php echo form_open('ManageUsers/searchUsers',['class'=>'form-inline']); ?>
+            <?php echo form_open('Manager/searchUsers',['class'=>'form-inline']); ?>
             <div class="form-group ">
                 <input type="text" class="form-control col-lg-8 " id="exampleInputEmail1" placeholder="Enter any keyword.." name="search">&nbsp;&nbsp;&nbsp;&nbsp;
                 <button type="submit" class="btn btn-default">Search</button>

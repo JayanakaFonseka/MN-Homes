@@ -20,9 +20,10 @@
             <a href="<?php echo base_url('Manager/Home'); ?>" class="list-group-item active">Profile</a>
             <a href="<?php echo base_url('Manager/RegisterUser'); ?>" class="list-group-item">Register New User</a>
             <a href="<?php echo base_url('Manager/viewUsers'); ?>" class="list-group-item">Manage User</a>
+            <a href="<?php echo base_url('Manager/Home'); ?>" class="list-group-item">New Project</a>
             <a href="<?php echo base_url('Manager/viewProjects'); ?>" class="list-group-item">Project Details</a>
-            <a href="contact.html" class="list-group-item">User Masseges</a>
-            <a href="contact.html" class="list-group-item">View Reports</a>
+            <a href="<?php echo base_url('Manager/viewMessages'); ?>" class="list-group-item">User Masseges</a>
+            <a href="Manager/Home" class="list-group-item">View Reports</a>
           </div>
         </div>
         <!-- Content Column -->
@@ -30,7 +31,7 @@
 
         <div class="row">
         <div class="col-lg-8 mb-4">
-          <h2>Personal Details</h2><br>
+          <h1>Personal Details</h1>
         </div>
 
         <div class="col-lg-4 mb-4">
