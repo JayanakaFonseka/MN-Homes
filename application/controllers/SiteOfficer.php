@@ -30,4 +30,8 @@ class SiteOfficer extends CI_Controller
     {
         $this->load->view('siteofficer/monthlyprojectreport');
     }
+    public function addlabour()
+    {
+        $this->load->view('siteofficer/add');
+    }
 }
