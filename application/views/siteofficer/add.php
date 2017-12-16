@@ -78,9 +78,13 @@
               </div>
               <div class="form-group">
                 <label for="name">Gender:</label><br>
-              
                 <input  type="radio" name="gender" value="male"> Male<br>
                 <input type="radio" name="gender" value="female"> Female<br>
+              </div>
+
+              <div class="form-group">
+                <input  type="submit" class="btn btn-primary" name="submit" value="Add Labour"><br>
+                
               </div>
               
             </form>
