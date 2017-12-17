@@ -30,9 +30,9 @@
           <div class="list-group text-center" >
             <a href="<?php echo base_url('SiteOfficer/Home'); ?>" class="list-group-item  ">Profile</a>
             <a href="<?php echo base_url('SiteOfficer/Markattendance'); ?>" class="list-group-item">Mark Attendence</a>
-            <a href="<?php echo base_url('SiteOfficer/projectprogress'); ?>" class="list-group-item">Project progress</a>
+            <a href="<?php echo base_url('SiteOfficer/projectprogress'); ?>" class="list-group-item">Monthly Project Report</a>
             <a href="<?php echo base_url('SiteOfficer/inventryrequest'); ?>" class="list-group-item">Inventry Requests</a>
-            <a href="<?php echo base_url('SiteOfficer/monthlyprojectreport'); ?>" class="list-group-item active">Monthly Project Report</a>
+
 
           </div>
         </div>

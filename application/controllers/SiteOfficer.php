@@ -80,7 +80,7 @@ public function addlabour_det()
     }
     public function insertattendance()
     {
-        $cur_date=date('y-m-d');
+        
         $this->load->model('Model_siteofficer');
         $data['records'] = $this->Model_siteofficer->insertlabourattendance(); 
         $this->load->view('siteofficer/Markattendance',$data);
