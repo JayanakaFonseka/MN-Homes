@@ -14,15 +14,14 @@ class Model_siteofficer extends CI_Model
 			'Fname' => $this->input->post('fname',TRUE), 
 			'Lname' => $this->input->post('lname',TRUE),
 			'Address' => $this->input->post('address',TRUE),
-			'Contact_No' => $this->input->post('contactno',TRUE),
-			'UserType' => $this->input->post('user_type',TRUE),
+			'Contact_No' => $this->input->post('cnumber',TRUE),
 			'Gender' => $this->input->post('gender',TRUE),
-			'Email' => $this->input->post('email',TRUE),
-			'Password' => sha1($this->input->post('password',TRUE))
+			'Nic'=>$this->input->post('nic',TRUE)
+
 
 		);
 
-		return $this->db->insert('employee',$data);
+		return $this->db->insert('labour',$data);
 
 	}
 }

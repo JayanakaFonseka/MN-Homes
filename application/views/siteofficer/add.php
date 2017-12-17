@@ -69,19 +69,19 @@
                 <input type="text" id="labourname" class="form-control" name="fname" required="">
               </div>
               <div class="form-group">
-                <label for="name">Last Name</label>
+                <label for="name">Last Name:</label>
                 <input type="text" id="labourid" class="form-control" name="lname" required="">
               </div>
               <div class="form-group">
-                <label for="name">Address</label>
+                <label for="name">Address:</label>
                 <input type="text" id="labourname" class="form-control" name="address" required="">
               </div>
               <div class="form-group">
-                <label for="name">NIC</label>
+                <label for="name">NIC:</label>
                 <input type="text" id="labourname" class="form-control" name="nic" required="">
               </div>
               <div class="form-group">
-                <label for="name">Contact Number</label>
+                <label for="name">Contact Number:</label>
                 <input type="text" id="labourname" class="form-control" name="cnumber" required="">
               </div>
               <div class="form-group">
@@ -93,7 +93,7 @@
               <div class="form-group">
                 <input  type="submit" class="btn btn-success" name="submit" value="Add Labour">
                                 <?php echo form_close(); ?> 
-                <input  type="submit" class="btn btn-primary" name="submit" value="Clear">
+                <input  type="submit" class="btn btn-default" name="submit" value="Clear">
 
                
               </div>

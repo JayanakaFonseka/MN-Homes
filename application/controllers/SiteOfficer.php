@@ -58,13 +58,21 @@ public function addlabour_det()
           $this->load->model('Model_siteofficer');
             $response = $this->Model_siteofficer->insertlabourdata(); 
 
-           
+            if ($response){
 
-      }
+                $this->session->set_flashdata('msg','Registered Successfully..please Login');
+                redirect('siteofficer/addlabour');
+            }
+
+            else{
+                $this->session->set_flashdata('msg','Something went wrong!!!');
+                redirect('siteofficer/addlabour');
+            } 
+        }
     }
 
             
- }            
+}            
 
 ?>
 
