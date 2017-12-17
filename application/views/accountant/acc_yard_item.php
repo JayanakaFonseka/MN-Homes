@@ -18,7 +18,7 @@ else{
         <li class="breadcrumb-item">
             <a href="<?php echo base_url(); ?>">Home</a>
         </li>
-        <li class="breadcrumb-item active">Yard details</li>
+        <li class="breadcrumb-item active">Yard Item</li>
     </ol>
     <div class="row">
         <!-- Sidebar Column -->
