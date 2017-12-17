@@ -7,6 +7,7 @@
 
     ?>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
 <!-- Page Content -->
@@ -53,25 +54,32 @@
 
           </div>
           <div class="panel-body">
-            <div class="well text-center" style="font-size: 20px">
-              <strong>DATE: <?php $cur_date=date('y-m-d'); echo $cur_date; ?></strong>
-            </div> 
-            <form action="" method="post">
+
+
+            <form action="<?=base_url()?>Siteofficer/insertattendance" method="post">
               <table class="table table-striped">
 
                 <tr>
                 <th width="25%">Labour Id</th>
                 
                 <th width="25%">Attendance</th>
-                <th width="25%">Date</th>
+                <th width="25%"></th>
+                <th width="25%">Do</th>
                 </tr>
-
+            <div class="well text-center" style="font-size: 20px">
+              <strong>DATE: <?php $cur_date=date('y-m-d'); echo $cur_date; ?></strong>
+            </div>
                <?php if (count($records)): ?>
                 <?php foreach ($records as $row): ?>
             <tr>
                 <td class="text-center"><?php echo $row->Nic; ?></td>
-                <td></td>
-                <td></td>
+                <td>
+                    <input type="radio" name="attendace" value="present"> Present<br>
+                    <input type="radio" name="attendace" value="absent">Absent<br>
+                </td>
+
+                <td><th><button type="button" class='btn btn-warning insertbtn'><a href="<?=base_url()?>Siteofficer/insertattendance">Insert</a></button></th>
+                </td>
 
             </tr>
 
@@ -93,3 +101,11 @@
  <!-- /.container -->
 
 <?php include 'loggedin/footer.php'; ?>
+<script type="text/javascript">
+  $('.insertbtn').click(function(){
+   // alert("fg");
+    //$(this).prop('disabled',true);
+    $(this).hide();
+  });
+
+</script>

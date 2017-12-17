@@ -43,4 +43,20 @@ class Model_siteofficer extends CI_Model
         return $query->result(); 
         
     }
+    function insertlabourattendance()
+	{
+		//$cur_date=date('y-m-d');
+		$data = array(
+
+
+			'Attendance' => $this->input->post('attendace',TRUE),
+			//'Date' => $this->input->$cur_date,
+			'Nic'=>$this->input->post('nic',TRUE)
+
+
+		);
+
+		return $this->db->insert('attendance',$data);
+
+	}
 }
