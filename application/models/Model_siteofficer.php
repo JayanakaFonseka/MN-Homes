@@ -24,4 +24,23 @@ class Model_siteofficer extends CI_Model
 		return $this->db->insert('labour',$data);
 
 	}
+	function getattendance() {
+		
+		$this->db->select('*');
+		$this->db->from('attendance');
+		$this->db->order_by('id');
+		$query = $this->db->get();
+        return $query->result(); 
+        
+    }
+
+    function getlabour() {
+		
+		$this->db->select('*');
+		$this->db->from('labour');
+		
+		$query = $this->db->get();
+        return $query->result(); 
+        
+    }
 }

@@ -12,7 +12,15 @@ class SiteOfficer extends CI_Controller
 	}
     public function markattendance()
     {
-        $this->load->view('siteofficer/Markattendance');
+        $this->load->model('Model_siteofficer');
+        $data['records'] = $this->Model_siteofficer->getlabour(); 
+        $this->load->view('siteofficer/Markattendance',$data);
+    }
+    public function viewattendance()
+    {
+        $this->load->model('Model_siteofficer');
+        $data['records'] = $this->Model_siteofficer->getattendance();
+        $this->load->view('siteofficer/viewattendance',$data);
     }
     public function new_month()
     {
