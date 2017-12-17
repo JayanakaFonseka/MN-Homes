@@ -9,7 +9,7 @@
 
 
 <!-- Page Content -->
-    <div class="container" style="min-height: 402px;">
+    <div class="container" style="min-height: 500px;">
 
     <br><br>
       <!-- Content Row -->
@@ -33,14 +33,6 @@
         <div class="col-lg-8 mb-4">
           <h1>Personal Details</h1>
         </div>
-
-        <div class="col-lg-4 mb-4">
-          <div class="profile-header-container">   
-              <div class="profile-header-img">
-                <img class="img-circle" src="<?php echo base_url(); ?>assets/images/profile.jpg" style="width: 200px; height: 200px; position: absolute;" />
-              </div>
-          </div>
-          </div>
         </div>
 
           <div class="caption">

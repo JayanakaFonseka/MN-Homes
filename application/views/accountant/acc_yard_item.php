@@ -49,7 +49,7 @@ else{
 
 
             <?php echo validation_errors(); ?>
-            <?php #echo form_open('Accountant/add_labour_det'); ?>
+            <?php echo form_open('Accountant/add_yard_item'); ?>
             <div class="row">
                 <div class="col-lg-6">
                     <div class="form-group">
@@ -59,7 +59,12 @@ else{
 
                     <div class="form-group">
                         <label for="exampleInputEmail1">Unit price</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Unit Price" name="unit_price">
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Unit Price in Rupees" name="unit_price">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Measuring Unit</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Measuring Unit" name="measure_unit">
                     </div>
 
                     <div class="form-group">
@@ -68,9 +73,11 @@ else{
                     </div>
 
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Measuring Unit</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Measuring Unit" name="measure_unit">
+                        <label for="exampleInputEmail1">Item Description</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Description" name="item_des">
                     </div>
+
+
 
                 </div>
             </div>

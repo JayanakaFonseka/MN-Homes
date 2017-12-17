@@ -33,4 +33,27 @@ class Model_accountant extends CI_Model
         $query = $this->db->get();
         return $query->result();
     }
+
+    function add_yard_item()
+    {
+        $data = array(
+
+        'item_name' => $this->input->post('item_name', TRUE),
+        'unit_price' => $this->input->post('unit_price', TRUE),
+        'measure_unit' => $this->input->post('measure_unit', TRUE),
+        'item_quantity' => $this->input->post('item_quntity', TRUE),
+        'item_des' => $this->input->post('item_des', TRUE)
+        );
+
+        return $this->db->insert('yard', $data);
+    }
+
+    function view_yard()
+    {
+        $this->db->select('*');
+        $this->db->from('yard');
+        $this->db->order_by('item_id');
+        $query = $this->db->get();
+        return $query->result();
+    }
 }
