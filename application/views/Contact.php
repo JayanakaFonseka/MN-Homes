@@ -27,25 +27,30 @@
             <!-- Map Column -->
             <div class="col-lg-8 mb-4">
                 <!-- Embedded Google Map -->
-                <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
+                <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3960.9026044153875!2d79.86131499999999!3d6.9022499999999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2db2c18a68712863!2sUniversity+of+Colombo+School+of+Computing+(UCSC)!5e0!3m2!1sen!2slk!4v1502711124187"></iframe>
             </div>
             <!-- Contact Details Column -->
             <div class="col-lg-4 mb-4">
                 <h3>Contact Details</h3>
                 <p>
-                    57, Union Place
-                    <br>Colombo 05, Sri Lanka.
+                    No 538 1/1, First Floor,
+                    Nawala Road
+                    <br>Rajagiriya Sri Lanka.
                     <br>
                 </p>
                 <p>
-                    <abbr title="Phone">Phone</abbr>: (123) 456-7890
+                    <abbr title="Phone">Phone</abbr>: +94 77 3026023 (Hotline)
                 </p>
                 <p>
-                    <abbr title="Email">Email</abbr>: <a href="mailto:oshewawitharana123@gmail.com">oshewawitharana123@teamishop.com
+                    <abbr title="Email">Email</abbr>: mn.homes@ymail.com
                     </a>
                 </p>
                 <p>
-                    <abbr title="Hours">Hours</abbr>: Monday - Friday: 9:00 AM to 10:00 PM
+                    <abbr title="Wsite">Web Site</abbr>: <a href="http://mnhomes.lk/about.html">mnhomes.lk
+                    </a>
+                </p>
+                <p>
+                    <abbr title="Hours">Hours</abbr>: Monday - Friday: 9:00 AM to 4:00 PM
                 </p>
             </div>
         </div>
