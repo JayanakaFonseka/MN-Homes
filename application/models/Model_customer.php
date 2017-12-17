@@ -13,5 +13,15 @@ class Model_customer extends CI_Model
     return $query->result();
   }
 
+  function getSelectedProject($id) {
+
+    $this->db->select('*');
+    $this->db->from('projects');
+    $this->db->order_by('id');
+    $this->db->where('id', $id);
+    $query = $this->db->get();
+    return $query->result();
+  }
+
 
 }

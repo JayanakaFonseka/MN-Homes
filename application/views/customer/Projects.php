@@ -11,18 +11,25 @@
 
 <div class="container" style="min-height: 402px;">
 
-<br><br>
+
+	<h1 class="mt-4 mb-3">MN Homes
+	</h1>
+
+	<ol class="breadcrumb">
+		<li class="breadcrumb-item">
+			<a href="<?php echo base_url(); ?>">Home</a>
+		</li>
+		<li class="breadcrumb-item active">Projects</li>
+	</ol>
+
 
 <div class="row">
         <!-- Sidebar Column -->
         <div class="col-lg-3 mb-4">
           <div class="list-group text-center" >
 					  <a href="<?php echo base_url('Customer/Home'); ?>" class="list-group-item">Profile</a>
-            <a href="<?php echo base_url('Customer/viewProjects'); ?>" class="list-group-item">Project Details</a>
-						<a href="" class="list-group-item">View Progress</a>
-            <a href="" class="list-group-item">Complains</a>
+            <a href="<?php echo base_url('Customer/ViewProjects'); ?>" class="list-group-item active">Project Details</a>
             <a href="" class="list-group-item">Send masseges</a>
-            <a href="" class="list-group-item">Milestones</a>
             <a href="" class="list-group-item">View Reports</a>
 
           </div>
@@ -49,7 +56,7 @@
             <div class="col-lg-6">
               <h2 class="card-title"><?php echo $row->Title; ?></h2>
               <p class="card-text"><?php echo $row->ShortD; ?></p>
-              <a href="#" class="btn btn-primary">Read More &rarr;</a>
+              <a href="<?php echo base_url('Customer/ViewSelectedProject/'.$row->id); ?>" class="btn btn-primary">Read More &rarr;</a>
             </div>
           </div>
         </div>
@@ -66,5 +73,7 @@
 	</div>
 </div>
 </div>
+
+<br><br><br><br><br><br>
 
 <?php include 'loggedin/footer.php'; ?>
