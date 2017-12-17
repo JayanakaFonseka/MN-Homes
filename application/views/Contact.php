@@ -27,25 +27,30 @@
             <!-- Map Column -->
             <div class="col-lg-8 mb-4">
                 <!-- Embedded Google Map -->
-                <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
+                <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.8607971246506!2d79.89749031431774!3d6.907243995009054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae259f25555557b%3A0xbd38cbc3ee78ce03!2sHomes+Constructions+Developers+Sri+Lanka!5e0!3m2!1sen!2slk!4v1513521973289"></iframe>
             </div>
             <!-- Contact Details Column -->
             <div class="col-lg-4 mb-4">
                 <h3>Contact Details</h3>
                 <p>
-                    57, Union Place
-                    <br>Colombo 05, Sri Lanka.
+                    No 538 1/1, First Floor,
+                    Nawala Road
+                    <br>Sri Jayawardenepura, Sri Lanka.
                     <br>
                 </p>
                 <p>
-                    <abbr title="Phone">Phone</abbr>: (123) 456-7890
+                    <abbr title="Phone">Phone</abbr>: +94 77 3026023 (Hotline)
                 </p>
                 <p>
-                    <abbr title="Email">Email</abbr>: <a href="mailto:oshewawitharana123@gmail.com">oshewawitharana123@teamishop.com
+                    <abbr title="Email">Email</abbr>: mn.homes@ymail.com
                     </a>
                 </p>
                 <p>
-                    <abbr title="Hours">Hours</abbr>: Monday - Friday: 9:00 AM to 10:00 PM
+                    <abbr title="Wsite">Web Site</abbr>: <a href="http://mnhomes.lk/about.html">mnhomes.lk
+                    </a>
+                </p>
+                <p>
+                    <abbr title="Hours">Hours</abbr>: Monday - Friday: 9:00 AM to 4:00 PM
                 </p>
             </div>
         </div>

@@ -66,21 +66,21 @@
                 <th width="25%">Date</th>
                 </tr>
 
+                
                <?php if (count($records)): ?>
                 <?php foreach ($records as $row): ?>
             <tr>
                 <td class="text-center"><?php echo $row->Nic; ?></td>
-                <td></td>
-                <td></td>
+                <td><?php echo $row->Attendance  ?></td>
+                <td><?php echo $row->Date ?></td>
 
             </tr>
 
             <?php endforeach; ?>
         <?php else: ?>
             <h3 style="margin-bottom: 50px;">No users in the database</h3>
-        <?php endif ?> 
-
-            </table>
+        <?php endif ?>      
+          </table>
             </form>
           </div>
         </div>
@@ -89,7 +89,6 @@
     </div>
   </div>
 
-</div>
- <!-- /.container -->
+</div> <!-- /.container -->
 
 <?php include 'loggedin/footer.php'; ?>
