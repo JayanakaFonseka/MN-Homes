@@ -18,7 +18,7 @@
 
   </head>
 
-  <body>
+  <body style="background-image: url('<?php echo base_url(); ?>assets/images/background.jpg');">
 
     <!-- Navigation -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top" style="background-image: url('<?php echo base_url(); ?>assets/images/back.jpg')">

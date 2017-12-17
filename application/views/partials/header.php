@@ -17,7 +17,7 @@
     <link href="<?php echo base_url(); ?>assets/css/modern-business.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body style="background-image: url('<?php echo base_url(); ?>assets/images/background.jpg')">
 
     <!-- Navigation -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">

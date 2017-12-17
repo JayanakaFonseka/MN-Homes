@@ -16,7 +16,7 @@ class Manager extends CI_Controller
 		$this->form_validation->set_rules('fname', 'First Name', 'required');
 		$this->form_validation->set_rules('lname', 'Last Name', 'required');
 	    $this->form_validation->set_rules('address', 'Address', 'required');
-	    $this->form_validation->set_rules('contactno', 'Contact Number', 'required|max_length[11]');
+	    $this->form_validation->set_rules('contactno', 'Contact Number', 'required|max_length[11]|numeric');
 	    $this->form_validation->set_rules('user_type', 'User Type', 'required');
 	    $this->form_validation->set_rules('gender', 'Gender', 'required');
 		$this->form_validation->set_rules('email', 'Email', 'required|valid_email|is_unique[employee.email]');

@@ -7,7 +7,7 @@
 	}
 ?>
 
-<div class="container" style="min-height: 402px;">
+<div class="container" style="min-height: 500px;">
 
 <br><br>
 
@@ -70,11 +70,8 @@
 
     </table>
     </div>
-
 </div>
 </div>
 </div>
-
-
 
 <?php include 'partials/footer.php'; ?>
