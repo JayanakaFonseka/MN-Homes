@@ -9,7 +9,6 @@
     <meta name="author" content="">
 
     <title>MN Homes Developer (PVT) LTD</title>
-
     <!-- Bootstrap core CSS -->
     <link href="<?php echo base_url(); ?>assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -33,6 +32,7 @@
             <!--<li class="nav-item">
               <a class="nav-link" href="<?php #echo base_url('Home/register'); ?>">Register</a>
             </li>  -->
+            <script src="assets/js/jquery.min.js"></script>
             <li class="nav-item">
               <a class="nav-link" href="<?php echo base_url('Home/about'); ?>">About</a>
             </li>

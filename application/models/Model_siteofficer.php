@@ -49,7 +49,7 @@ class Model_siteofficer extends CI_Model
 		$data = array(
 
 
-			'Attendance' => $this->input->post('attendace',TRUE),
+			'Attendance' => $this->input->post('attendance',TRUE),
 			'Date' => $this->input->$cur_date,
 			'Nic'=>$this->input->post('nic',TRUE)
 

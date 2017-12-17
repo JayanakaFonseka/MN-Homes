@@ -93,8 +93,7 @@
               <div class="form-group">
                 <input  type="submit" class="btn btn-success" name="submit" value="Add Labour">
                                 <?php echo form_close(); ?> 
-                <input  type="submit" class="btn btn-default" name="submit" value="Clear">
-
+                
                
               </div>
 

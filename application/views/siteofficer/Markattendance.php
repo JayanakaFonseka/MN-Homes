@@ -7,8 +7,8 @@
 
     ?>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+-->
 
 <!-- Page Content -->
     <div class="container" style="min-height: 402px;">
@@ -55,15 +55,15 @@
           </div>
           <div class="panel-body">
 
-
-            <form action="<?=base_url()?>Siteofficer/insertattendance" method="post">
+            <?php echo form_open('SiteOfficer/insertattendance'); ?>
+            <form action="" method="post">
               <table class="table table-striped">
 
                 <tr>
                 <th width="25%">Labour Id</th>
                 
                 <th width="25%">Attendance</th>
-                <th width="25%"></th>
+                <th width="25%">Date</th>
                 <th width="25%">Do</th>
                 </tr>
             <div class="well text-center" style="font-size: 20px">
@@ -72,13 +72,19 @@
                <?php if (count($records)): ?>
                 <?php foreach ($records as $row): ?>
             <tr>
-                <td class="text-center" val><?php echo $row->Nic; ?></td>
+                
+                <td class="text-center" >
+                  <input type="hidden" name="nic" value=<?php echo $row->Nic; ?>>
+                 <?php echo $row->Nic; ?></td>
                 <td>
                     <input type="radio" name="attendace" value="present"> Present<br>
                     <input type="radio" name="attendace" value="absent">Absent<br>
                 </td>
+                <td>
+                   <?php echo $cur_date; ?> 
+                </td>
 
-                <td><th><button type="button" class='btn btn-warning insertbtn'><a href="<?=base_url()?>Siteofficer/insertattendance">Insert</a></button></th>
+                <td><button type="button" class='btn btn-warning insertbtn'><a href="<?=base_url()?>Siteofficer/insertattendance">Add</a></button>
                 </td>
 
             </tr>
@@ -90,6 +96,7 @@
 
             </table>
             </form>
+            <?php echo form_close(); ?>
           </div>
         </div>
       </div>
