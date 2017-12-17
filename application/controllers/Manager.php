@@ -72,26 +72,27 @@ class Manager extends CI_Controller
 		
 	}
 
-	public function editUser($stu_id) {
+	public function editUser($user_id) {
 
 		$this->load->model('Model_manager');
 
 		if (isset($_POST['update'])) {
-			if ($this->Model_manager->update($stu_id)) {
-				$this->session->set_flashdata('success','Student is updated');
+			if ($this->Model_manager->update($user_id)) {
+				//$this->session->set_flashdata('success','Student is updated');
 				redirect('Manager/viewUsers/');	
 			} else {
-				$this->session->set_flashdata('error','Student is not updated');
+				//$this->session->set_flashdata('error','Student is not updated');
 				redirect('Manager/viewUsers/');
 			}
 		}
 
-		$data['row'] = $this->Model_manager->edit($stu_id);
+		$data['row'] = $this->Model_manager->edit($user_id);
 		$this->load->view('manager/Update',$data);
 		
 	}
 
 	public function searchUsers() {
+
 		$searchkey = $this->input->post('search');
 		$this->load->model('Model_manager');
 		$data['records'] = $this->Model_manager->Search($searchkey);
@@ -101,6 +102,7 @@ class Manager extends CI_Controller
 
 
 	function viewMessages() {
+
 		$this->load->model('Model_manager');
 		$records = $this->Model_manager->getMessages();
 		$this->load->view('manager/Messages', ['records' => $records]);
@@ -124,6 +126,20 @@ class Manager extends CI_Controller
           	redirect('Home/Contact');
 
         }
+	}
+
+	public function New_project(){
+
+		$this->load->model('Model_manager');
+        $data['records'] = $this->Model_manager->GetCustomer();
+		$this->load->view('Manager/New_project',$data);
+	}
+
+	public function add_project(){
+
+		$this->load->model('Model_manager');
+        $this->Model_manager->Addproject();
+		redirect('Manager/New_project');
 	}
 
 

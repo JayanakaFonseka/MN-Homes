@@ -17,11 +17,11 @@
         <!-- Sidebar Column -->
         <div class="col-lg-3 mb-4">
           <div class="list-group text-center" >
-            <a href="<?php echo base_url('Manager/Home'); ?>" class="list-group-item active">Profile</a>
+            <a href="<?php echo base_url('Manager/Home'); ?>" class="list-group-item">Profile</a>
             <a href="<?php echo base_url('Manager/RegisterUser'); ?>" class="list-group-item">Register New User</a>
             <a href="<?php echo base_url('Manager/viewUsers'); ?>" class="list-group-item">Manage User</a>
-            <a href="<?php echo base_url('Manager/Home'); ?>" class="list-group-item">New Project</a>
-            <a href="<?php echo base_url('Manager/viewProjects'); ?>" class="list-group-item">Project Details</a>
+            <a href="<?php echo base_url('Manager/New_project'); ?>" class="list-group-item">New Project</a>
+            <a href="<?php echo base_url('Manager/viewProjects'); ?>" class="list-group-item active">Project Details</a>
             <a href="<?php echo base_url('Manager/viewMessages'); ?>" class="list-group-item">User Masseges</a>
             <a href="Manager/Home" class="list-group-item">View Reports</a>
           </div>
