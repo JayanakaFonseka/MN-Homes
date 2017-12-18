@@ -45,7 +45,7 @@
 
       
       <?php echo validation_errors(); ?>
-      <?php echo form_open('SiteOfficer/'); ?>
+      <?php echo form_open('SiteOfficer/insertinventryrequest'); ?>
 
     <div class="row">
       

@@ -59,4 +59,37 @@ class Model_siteofficer extends CI_Model
 		return $this->db->insert('attendance',$data);
 
 	}
+
+	function monthlyprojectreport($post_image)
+	{
+		$cur_date=date('y-m-d');
+		$data = array(
+
+			'project_id' => $this->input->post('attendance',TRUE),
+			'content' => $this->input->post('description',TRUE),
+			'date' => $this->input->$cur_date,
+			'image1'=>$post_image,
+
+
+		);
+
+		return $this->db->insert('report_details',$data);
+
+	}
+	function addinventryrequest()
+	{
+		$cur_date=date('y-m-d');
+		$data = array(
+
+			'project_id' => $this->input->post('attendance',TRUE),
+			'date' => $this->input->$cur_date,
+			'requested_items'=>$this->input->post('file1',TRUE),
+
+
+		);
+
+		return $this->db->insert('inventry_request',$data);
+
+	}
+
 }

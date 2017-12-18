@@ -84,17 +84,8 @@
         
         </div>
 
-        <div class="form-group">
-          <label for="exampleInputEmail1">Image 2</label>
-          <input type="file" class="form-control-file" id="exampleInputFile" name="file2" aria-describedby="fileHelp">
-        
-        </div>
 
-        <div class="form-group">
-          <label for="exampleInputEmail1">Image 3</label>
-          <input type="file" class="form-control-file" id="exampleInputFile" name="file3" aria-describedby="fileHelp">
-        
-        </div>
+
 
 
 
