@@ -32,9 +32,7 @@ else{
                 <a href="<?php echo base_url('Accountant/view_yard'); ?>" class="list-group-item">Yard Details</a>
                 <a href="<?php echo base_url('Accountant/add_yard_item'); ?>" class="list-group-item">Add Yard Item</a>
                 <a href="<?php echo base_url('Accountant/view_project'); ?>" class="list-group-item">Project Details</a>
-                <a href="" class="list-group-item">Pay-sheets</a>
                 <a href="<?php echo base_url('Accountant/add_labour'); ?>" class="list-group-item">Add labour</a>
-                <a href="" class="list-group-item">View Reports</a>
             </div>
         </div>
         <!-- Content Column -->
@@ -56,8 +54,8 @@ else{
                     <tr>
                         <th class="text-center">NIC</th>
                         <th>&nbsp;&nbsp;&nbsp;&nbsp;Name</th>
-                        <th>Month</th>
-                        <th>&nbsp;&nbsp;&nbsp;&nbsp;Project ID</th>
+                        <th>Date</th>
+                       <!-- <th>&nbsp;&nbsp;&nbsp;&</th>  -->
                         <th>Attendance</th>
                     </tr>
 
@@ -66,11 +64,11 @@ else{
                         <?php foreach ($records as $row): ?>
 
                             <tr>
-                                <td class="text-center"><?php echo $row->labour_id; ?></td>
+                                <td class="text-center"><?php echo $row->Nic; ?></td>
                                 <td><?php echo "$row->Fname $row->Lname" ?></td>
-                                <td><?php echo $row->month; ?></td>
-                                <td><?php echo $row->project_id; ?></td>
-                                <td><?php echo $row->no_days; ?></td>
+                                <td><?php echo $row->date; ?></td>
+                               <!-- <td><?php# echo $row->project_id; ?></td> -->
+                                <td><?php echo $row->attendance; ?></td>
 
                             </tr>
 

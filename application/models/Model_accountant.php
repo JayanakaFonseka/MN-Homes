@@ -20,7 +20,7 @@ class Model_accountant extends CI_Model
     {
         $this->db->select('*');
         $this->db->from('attendance');
-        $this->db->join('labour', 'labour.Nic = attendance.labour_id');
+        $this->db->join('labour', 'labour.Nic = attendance.Nic');
         $query = $this->db->get();
         return $query->result();
     }

@@ -39,6 +39,10 @@
         <!-- Content Column -->
       <div class="col-lg-9 mb-4">
         <div class="welltextcenter">
+            <?php if ($this->session->flashdata('msg')) {
+                echo "<h3>".$this->session->flashdata('msg')."</h3>";
+            }
+            ?>
 
         </div>
         <div class="panel panel default">
@@ -78,16 +82,17 @@
             <div class="form-group">  
                 <td>
                     <input type="radio" name="attendace" value="present"> Present<br>
-                    <input type="radio" name="attendace" value="absent">Absent<br>
+                    <input type="radio" name="attendace" value="absent"> Absent<br>
                 </td>
               </div>
             <div class="form-group">  
                 <td>
+                    <input type="hidden" name="date" value= "<?php echo $cur_date; ?>">
                    <?php echo $cur_date; ?> 
                 </td>
               </div>
             <div class="form-group">  
-                <td><button type="button" class='btn btn-warning insertbtn'><a href="<?=base_url()?>Siteofficer/insertattendance">Add</a></button>
+                <td><button type="submit" class='btn btn-warning insertbtn'>Add</button>
                 </td>
               </div>
 
