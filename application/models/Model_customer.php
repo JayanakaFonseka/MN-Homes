@@ -37,4 +37,17 @@ class Model_customer extends CI_Model
   	}
 
 
+    function viewReports($id) {
+        
+      $this->db->select('*');
+      $this->db->from('report_details as rep','projects as pjts');
+      $this->db->where('emp.id', $id);
+      $this->db->join('projects as pjts', 'rep.project_id = pjts.id');
+      $this->db->join('employee as emp', 'pjts.customer_id = emp.id');
+      $this->db->order_by('rport_id', 'DESC');
+      $query = $this->db->get();
+      return $query->result(); 
+        
+    }
+
 }

@@ -49,6 +49,13 @@ class Customer extends CI_Controller
         }
 	}
 
+	function viewReports($id){
+
+		$this->load->model('Model_customer');
+        $data['records'] = $this->Model_customer->viewReports($id);
+		$this->load->view('customer/View_reports',$data);
+	}
+
 
 
 }
