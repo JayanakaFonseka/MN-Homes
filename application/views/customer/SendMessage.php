@@ -34,11 +34,9 @@
 
           </div>
         </div>
-      </div>
 
 
 
-<div class="row">
     <div class="col-lg-8 mb-4">
         <h3>Send us a Message</h3>
     <hr>
@@ -72,8 +70,7 @@
                     <label>Message:</label>
                     <textarea rows="10" cols="100" class="form-control" id="message" name="message" placeholder=" Project Title..
 
-
-                    Message body.." required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+Message body.." required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
                 </div>
             </div>
 
@@ -87,6 +84,5 @@
 <!-- /.row -->
 
 </div>
-
 
 <?php include 'loggedin/footer.php'; ?>
