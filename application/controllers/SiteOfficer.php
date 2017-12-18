@@ -83,11 +83,20 @@ public function addlabour_det()
     }
     public function insertattendance()
     {
-        
-        $this->load->model('Model_siteofficer');
-        $data['records'] = $this->Model_siteofficer->insertlabourattendance(); 
-        $this->load->view('siteofficer/Markattendance',$data);
 
+        $this->load->model('Model_siteofficer');
+        $response = $this->Model_siteofficer->insertlabourattendance();
+
+        if ($response){
+
+            $this->session->set_flashdata('msg','Attendance added Successfully.');
+            redirect('siteofficer/Markattendance');
+      }
+
+        else{
+            $this->session->set_flashdata('msg','Attendance marked for the date!!!');
+            redirect('siteofficer/Markattendance');
+        }
     }
     public function insertinventryrequest()
     {

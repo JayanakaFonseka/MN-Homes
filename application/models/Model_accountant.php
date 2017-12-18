@@ -16,11 +16,27 @@ class Model_accountant extends CI_Model
 
     }
 
+    function searchlab($search)
+    {
+        $this->db->select('*');
+        $this->db->from('labour', 'attendance');
+        $this->db->join('labour', 'labour.Nic = attendance.Nic');
+        $this->db->like('Fname', $search);
+        $this->db->or_like('Lname', $search);
+        $this->db->or_like('Address', $search);
+        $this->db->or_like('Contact_No', $search);
+        $this->db->or_like('Gender', $search);
+        $this->db->or_like('Nic', $search);
+
+        $query = $this->db->get();
+        return $query->result();
+    }
+
     function view_attendance()
     {
         $this->db->select('*');
         $this->db->from('attendance');
-        $this->db->join('labour', 'labour.Nic = attendance.labour_id');
+        $this->db->join('labour', 'labour.Nic = attendance.Nic');
         $query = $this->db->get();
         return $query->result();
     }
@@ -56,4 +72,19 @@ class Model_accountant extends CI_Model
         $query = $this->db->get();
         return $query->result();
     }
+
+    function searchyard($search)
+    {
+        $this->db->select('*');
+        $this->db->from('yard');
+        $this->db->like('item_name', $search);
+        $this->db->or_like('unit_price', $search);
+        $this->db->or_like('measure_unit', $search);
+        $this->db->or_like('item_quantity', $search);
+        $this->db->or_like('item_des', $search);
+
+        $query = $this->db->get();
+        return $query->result();
+    }
+
 }

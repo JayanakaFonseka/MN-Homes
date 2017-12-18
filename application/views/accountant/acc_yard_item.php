@@ -29,9 +29,7 @@ else{
                 <a href="<?php echo base_url('Accountant/view_yard'); ?>" class="list-group-item">Yard Details</a>
                 <a href="<?php echo base_url('Accountant/add_yard_item'); ?>" class="list-group-item active">Add Yard Item</a>
                 <a href="<?php echo base_url('Accountant/view_project'); ?>" class="list-group-item">Project Details</a>
-                <a href="" class="list-group-item">Pay-sheets</a>
                 <a href="<?php echo base_url('Accountant/add_labour'); ?>" class="list-group-item">Add labour</a>
-                <a href="" class="list-group-item">View Reports</a>
 
             </div>
         </div>

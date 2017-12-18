@@ -1,4 +1,4 @@
-<?php 
+<?php
 	if ($this->session->userdata('loggedin')) {
     	include 'loggedin/header.php';
     }
@@ -12,6 +12,13 @@
 <div class="container" style="min-height: 500px;">
 
 <br><br>
+
+<ol class="breadcrumb">
+	<li class="breadcrumb-item">
+		<a href="<?php echo base_url(); ?>">Home</a>
+	</li>
+	<li class="breadcrumb-item active">View Reports</li>
+</ol>
 
 <div class="row">
         <!-- Sidebar Column -->
@@ -41,14 +48,14 @@
               <img class="img-fluid rounded" style="margin-bottom: 10px;" src="<?php echo base_url(); ?><?php echo $row->image1; ?>" alt="">
               <img class="img-fluid rounded" style="margin-bottom: 10px;" src="<?php echo base_url(); ?><?php echo $row->image2; ?>" alt="">
               <img class="img-fluid rounded" style="margin-bottom: 10px;" src="<?php echo base_url(); ?><?php echo $row->image3; ?>" alt="">
-              
+
             </div>
             <div class="col-lg-6">
               <h2 class="card-title"><?php echo $row->Title; ?></h2><br>
               <h4 class="card-text"><?php echo $row->ShortD; ?></h4><br>
               <h5 class="card-text"><?php echo $row->date; ?></h5><br>
               <p class="card-text"><?php echo $row->content; ?></p>
-              
+
             </div>
           </div>
         </div>

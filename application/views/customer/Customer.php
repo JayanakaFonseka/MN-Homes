@@ -11,12 +11,10 @@
 <!-- Page Content -->
     <div class="container" style="min-height: 402px;">
 
-      <!-- Page Heading/Breadcrumbs -->
-      <h1 class="mt-4 mb-3">Welcome
-        <small><?php echo $this->session->userdata('fname'); ?>..</small>
-      </h1>
+      <br><br>
 
-      <ol class="breadcrumb">
+      <!-- Page Heading/Breadcrumbs -->
+        <ol class="breadcrumb">
         <li class="breadcrumb-item">
           <a href="<?php echo base_url(); ?>">Home</a>
         </li>

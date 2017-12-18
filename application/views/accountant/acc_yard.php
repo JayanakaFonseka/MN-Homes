@@ -29,9 +29,7 @@ else{
                 <a href="<?php echo base_url('Accountant/view_yard'); ?>" class="list-group-item active">Yard Details</a>
                 <a href="<?php echo base_url('Accountant/add_yard_item'); ?>" class="list-group-item">Add Yard Item</a>
                 <a href="<?php echo base_url('Accountant/view_project'); ?>" class="list-group-item">Project Details</a>
-                <a href="" class="list-group-item">Pay-sheets</a>
                 <a href="<?php echo base_url('Accountant/add_labour'); ?>" class="list-group-item">Add labour</a>
-                <a href="" class="list-group-item">View Reports</a>
 
             </div>
         </div>
@@ -40,7 +38,7 @@ else{
                 <h1 >Stored Items in Yard</h1>
 
                 <hr>
-                <?php echo form_open('Manager/searchUsers',['class'=>'form-inline']); ?>
+                <?php echo form_open('Accountant/searchyard',['class'=>'form-inline']); ?>
                 <div class="form-group ">
                     <input type="text" class="form-control col-lg-8 " id="exampleInputEmail1" placeholder="Enter any keyword.." name="search">&nbsp;&nbsp;&nbsp;&nbsp;
                     <button type="submit" class="btn btn-default">Search</button>

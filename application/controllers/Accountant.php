@@ -76,6 +76,14 @@ class Accountant extends CI_Controller
         $this->load->view('accountant/acc_yard',$data);
     }
 
+    public function searchyard()
+    {
+        $search = $this->input->post('search');
+        $this->load->model('Model_accountant');
+        $data['records'] = $this->Model_accountant->searchyard($search);
+        $this->load->view('Accountant/acc_yard', $data);
+
+    }
     public function add_yard_item()
     {
 
@@ -110,8 +118,8 @@ class Accountant extends CI_Controller
     public function searchlabours() {
         $search = $this->input->post('search');
         $this->load->model('Model_accountant');
-        $data['records'] = $this->Model_accountant->Search($search);
-        $this->load->view('manager/ManageUsers', $data);
+        $data['records'] = $this->Model_accountant->searchlab($search);
+        $this->load->view('Accountant/acc_attendance', $data);
 
     }
 }
