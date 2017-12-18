@@ -38,7 +38,7 @@ else{
                 <h1 >Stored Items in Yard</h1>
 
                 <hr>
-                <?php echo form_open('Manager/searchUsers',['class'=>'form-inline']); ?>
+                <?php echo form_open('Accountant/searchyard',['class'=>'form-inline']); ?>
                 <div class="form-group ">
                     <input type="text" class="form-control col-lg-8 " id="exampleInputEmail1" placeholder="Enter any keyword.." name="search">&nbsp;&nbsp;&nbsp;&nbsp;
                     <button type="submit" class="btn btn-default">Search</button>

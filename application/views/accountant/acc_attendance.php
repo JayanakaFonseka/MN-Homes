@@ -41,7 +41,7 @@ else{
             <h1 >Stored users in Databse</h1>
 
             <hr>
-            <?php echo form_open('Accountant/view_attendance',['class'=>'form-inline']); ?>
+            <?php echo form_open('Accountant/searchlabours',['class'=>'form-inline']); ?>
             <div class="form-group ">
                 <input type="text" class="form-control col-lg-8 " id="exampleInputEmail1" placeholder="Enter any keyword.." name="search">&nbsp;&nbsp;&nbsp;&nbsp;
                 <button type="submit" class="btn btn-default">Search</button>
