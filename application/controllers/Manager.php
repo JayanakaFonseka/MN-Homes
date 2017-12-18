@@ -143,4 +143,17 @@ class Manager extends CI_Controller
 	}
 
 
+	function viewReports($id){
+		$this->load->model('Model_manager');
+        $data['records'] = $this->Model_manager->viewReports($id);
+		$this->load->view('Manager/Project_reports',$data);
+	}
+
+	public function viewProjects2() {
+		$this->load->model('Model_manager');
+		$records = $this->Model_manager->getProjects();
+		$this->load->view('manager/Select_project', ['records' => $records]);
+		
+	}
+
 }

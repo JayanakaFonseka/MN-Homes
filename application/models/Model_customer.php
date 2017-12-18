@@ -24,4 +24,17 @@ class Model_customer extends CI_Model
   }
 
 
+  	public function Message(){
+
+  		$data = array(
+
+  		'full_name' => $this->input->post('fullname', TRUE),
+  		'tele_number' => $this->input->post('telenumber', TRUE),
+  		'email' => $this->input->post('email',TRUE),
+  		'message' => $this->input->post('message',TRUE) );
+
+  		$this->db->insert('messages',$data);
+  	}
+
+
 }

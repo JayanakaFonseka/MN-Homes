@@ -25,4 +25,30 @@ class Customer extends CI_Controller
 		$this->load->view('customer/ReadMoreProject', ['records' => $records]);
 	}
 
+	public function SendMessage()
+	{
+		$this->load->view('customer/SendMessage');
+	}
+
+
+	function Message(){
+
+		$this->form_validation->set_rules('email', 'Email', 'required|valid_email');
+
+		if ($this->form_validation->run() == FALSE){
+
+			$this->load->view('customer/SendMessage');
+       	}
+
+        else{
+
+          	$this->load->model('Model_customer');
+          	$this->Model_customer->Message();
+          	redirect('Customer/Message');
+
+        }
+	}
+
+
+
 }

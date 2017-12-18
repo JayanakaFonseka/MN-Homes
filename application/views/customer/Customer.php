@@ -30,7 +30,7 @@
           <div class="list-group text-center" >
             <a href="<?php echo base_url('Customer/Home'); ?>" class="list-group-item active">Profile</a>
             <a href="<?php echo base_url('Customer/viewProjects'); ?>" class="list-group-item">Project Details</a>
-            <a href="" class="list-group-item">Send masseges</a>
+            <a href="<?php echo base_url('Customer/SendMessage'); ?>" class="list-group-item">Send masseges</a>
             <a href="" class="list-group-item">View Reports</a>
           </div>
         </div>

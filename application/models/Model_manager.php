@@ -143,4 +143,17 @@ class Model_manager extends CI_Model
         return $query->result();
     }
 
+
+    function viewReports($id) {
+				
+		$this->db->select('*');
+		$this->db->from('report_details as rep','projects as pjts');
+		$this->db->where('project_id', $id);
+		$this->db->join('projects as pjts', 'rep.project_id = pjts.id');
+		$this->db->order_by('rport_id', 'DESC');
+		$query = $this->db->get();
+        return $query->result(); 
+        
+    }
+
 }
