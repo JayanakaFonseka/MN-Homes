@@ -85,12 +85,6 @@
         </div>
 
         <div class="form-group">
-          <label>Post Image</label> 
-          <input type="file" name="userfile" size="20" class="form-control" placeholder="Enter a title for the post">
-          <!-- image name must be userfile -->
-        </div>
-
-        <div class="form-group">
           <label for="exampleInputEmail1">Image 2</label>
           <input type="file" class="form-control-file" id="exampleInputFile" name="file2" aria-describedby="fileHelp">
         

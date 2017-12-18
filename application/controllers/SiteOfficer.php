@@ -22,14 +22,20 @@ class SiteOfficer extends CI_Controller
         $data['records'] = $this->Model_siteofficer->getattendance();
         $this->load->view('siteofficer/viewattendance',$data);
     }
+
     public function new_month()
     {
         $this->load->model('siteofficer_model');
     }
+
     public function monthlyprojectreport()
+    
     {
+        $this->load->model('Model_siteofficer');
+        $response = $this->Model_siteofficer->monthlyprojectreport();
         $this->load->view('siteofficer/monthlyprojectreport');
     }
+
     public function inventryrequest()
     {
         $this->load->view('siteofficer/inventryrequest');
@@ -81,6 +87,14 @@ public function addlabour_det()
         $this->load->model('Model_siteofficer');
         $data['records'] = $this->Model_siteofficer->insertlabourattendance(); 
         $this->load->view('siteofficer/Markattendance',$data);
+
+    }
+    public function insertinventryrequest()
+    {
+        
+        $this->load->model('Model_siteofficer');
+        $data['records'] = $this->Model_siteofficer->addinventryrequest(); 
+        $this->load->view('siteofficer/inventryrequest',$data);
 
     }
 
