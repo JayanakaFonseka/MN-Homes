@@ -12,8 +12,7 @@
 <div class="container" style="min-height: 402px;">
 
 
-  <h1 class="mt-4 mb-3">MN Homes
-  </h1>
+  <br><br>
 
   <ol class="breadcrumb">
     <li class="breadcrumb-item">
@@ -30,7 +29,7 @@
 					  <a href="<?php echo base_url('Customer/Home'); ?>" class="list-group-item">Profile</a>
             <a href="<?php echo base_url('Customer/ViewProjects'); ?>" class="list-group-item">Project Details</a>
             <a href="<?php echo base_url('Customer/SendMessage'); ?>" class="list-group-item active">Send masseges</a>
-            <a href="" class="list-group-item">View Reports</a>
+            <a href="<?php echo base_url('Customer/viewReports/'.$_SESSION['user_id']); ?>" class="list-group-item">View Reports</a>
 
           </div>
         </div>
