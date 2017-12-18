@@ -65,7 +65,7 @@ public function addlabour_det()
 
             if ($response){
 
-                $this->session->set_flashdata('msg','Registered Successfully..please Login');
+                $this->session->set_flashdata('msg','Labour Registered Successfully.');
                 redirect('siteofficer/addlabour');
             }
 

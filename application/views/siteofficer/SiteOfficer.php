@@ -16,12 +16,7 @@
         <small><?php echo $this->session->userdata('fname'); ?>..</small>
       </h1>
 
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="<?php echo base_url(); ?>">Home</a>
-        </li>
-        <li class="breadcrumb-item active">Profile</li>
-      </ol>
+
 
       <!-- Content Row -->
       <div class="row">

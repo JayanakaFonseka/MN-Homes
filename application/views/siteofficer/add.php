@@ -16,12 +16,7 @@
         <small><?php echo $this->session->userdata('fname'); ?>..</small>
       </h1>
 
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="<?php echo base_url(); ?>">Home</a>
-        </li>
-        <li class="breadcrumb-item active">Profile</li>
-      </ol>
+
 
       <!-- Content Row -->
       <div class="row">
@@ -30,7 +25,7 @@
           <div class="list-group text-center" >
             <a href="<?php echo base_url('SiteOfficer/Home'); ?>" class="list-group-item ">Profile</a>
             <a href="<?php echo base_url('SiteOfficer/Markattendance'); ?>" class="list-group-item active">Mark Attendence</a>
-            <a href="<?php echo base_url('SiteOfficer/projectprogress'); ?>" class="list-group-item">Project progress</a>
+
             <a href="<?php echo base_url('SiteOfficer/inventryrequest'); ?>" class="list-group-item">Inventry Requests</a>
             <a href="<?php echo base_url('SiteOfficer/monthlyprojectreport'); ?>" class="list-group-item">Monthly Project Report</a>
 
@@ -40,7 +35,7 @@
       <div class="col-lg-9 mb-4">
         <div class="welltextcenter">
           <h2>
-            Attendance Management
+            
           </h2>
         </div>
         <div class="panel panel default">

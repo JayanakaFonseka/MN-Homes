@@ -17,13 +17,11 @@
       <h1 class="mt-4 mb-3">Welcome
         <small><?php echo $this->session->userdata('fname'); ?>..</small>
       </h1>
+      <h1 style="text-align: center;">
+           Labour Attendance Management
+      </h1>
 
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="<?php echo base_url(); ?>">Home</a>
-        </li>
-        <li class="breadcrumb-item active">Profile</li>
-      </ol>
+     
 
       <!-- Content Row -->
       <div class="row">
@@ -41,9 +39,7 @@
         <!-- Content Column -->
       <div class="col-lg-9 mb-4">
         <div class="welltextcenter">
-          <h2 style="text-align: center;">
-           Labour Attendance Management
-          </h2>
+
         </div>
         <div class="panel panel default">
           <div class="panelheading">

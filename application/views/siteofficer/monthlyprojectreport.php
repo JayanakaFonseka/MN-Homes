@@ -15,13 +15,9 @@
       <h1 class="mt-4 mb-3">Welcome
         <small><?php echo $this->session->userdata('fname'); ?>..</small>
       </h1>
+      <h1 style="text-align: center;">Monthly Report</h1>
 
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="<?php echo base_url(); ?>">Home</a>
-        </li>
-        <li class="breadcrumb-item active">Profile</li>
-      </ol>
+
 
       <!-- Content Row -->
       <div class="row">
@@ -39,24 +35,25 @@
         <!-- Content Column -->
         <div class="col-lg-9 mb-4">
 
-      <h1 style="text-align: center;">Monthly Report</h1>
+
 
       <?php if ($this->session->flashdata('msg')) {
         echo "<h3>".$this->session->flashdata('msg')."</h3>";
       }
       ?>
 
-      <hr>
+      
 
       
       <?php echo validation_errors(); ?>
-      <?php echo form_open('SiteOfficer/monthlyprojectreport'); ?>
+      <?php echo form_open_multipart('SiteOfficer/monthlyprojectreport'); ?>
 
     <div class="row">
-      <div class="col-lg-6">
+      
+      <div class="col-lg-9 dashed" style="border: dashed;">
         <div class="form-group">
           <label for="exampleInputEmail1">Project Id</label>
-          <input type="text" class="form-control" id="exampleInputEmail1" placeholder="First name" name="projectid">
+          <input type="text" class="form-control" id="exampleInput" placeholder="project id" name="projectid">
         </div>
 
 
@@ -77,21 +74,26 @@
 
 
         </div>
-
-        <div class="col-lg-6">
+        
+        <div class="col-lg-9 dashed" style="border: dashed;">
 
 
         <div class="form-group">
           <label for="exampleInputEmail1">Image 1</label>
-          <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Select Image " name="image1">
+          <input type="file" class="form-control-file" id="exampleInputFile" name="file1"aria-describedby="fileHelp">
+        
         </div>
-       <div class="form-group">
+
+        <div class="form-group">
           <label for="exampleInputEmail1">Image 2</label>
-          <input type="text" class="form-control" id="exampleInputEmail1" placeholder=" Select  Image " name="image2">
+          <input type="file" class="form-control-file" id="exampleInputFile" name="file2" aria-describedby="fileHelp">
+        
         </div>
-       <div class="form-group">
+
+        <div class="form-group">
           <label for="exampleInputEmail1">Image 3</label>
-          <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Select Image " name="image3">
+          <input type="file" class="form-control-file" id="exampleInputFile" name="file3" aria-describedby="fileHelp">
+        
         </div>
 
 
