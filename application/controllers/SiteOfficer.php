@@ -31,8 +31,8 @@ class SiteOfficer extends CI_Controller
     public function monthlyprojectreport()
     
     {
-        $this->load->model('Model_siteofficer');
-        $response = $this->Model_siteofficer->monthlyprojectreport();
+        //$this->load->model('Model_siteofficer');
+        //$response = $this->Model_siteofficer->monthlyprojectreport();
         $this->load->view('siteofficer/monthlyprojectreport');
     }
 
@@ -96,6 +96,35 @@ public function addlabour_det()
         $data['records'] = $this->Model_siteofficer->addinventryrequest(); 
         $this->load->view('siteofficer/inventryrequest',$data);
 
+    }
+
+    public function insertmonthlyprojectreport(){
+
+            $this->load->model('Model_siteofficer');
+            
+            //image
+            $config['upload_path'] = './assets/images/uploads';
+            $config['allowed_types'] = 'gif|jpg|png|jpeg';
+            $config['max_size'] = '2048';
+            $config['max_width'] = '2000'; //max resolution width
+            $config['max_height'] = '2000';  //max resolution height
+
+            $this->load->library('upload', $config);
+
+            if(!$this->upload->do_upload('userfile')){
+                $errors = array('error' => $this->upload->display_errors());
+                $post_image = 'no_image.png';
+                
+            }
+            else{
+                $data = array('upload_data' => $this->upload->data());
+                $post_image = $_FILES['userfile']['name'];  //name must be userfile
+                
+            }
+
+            $this->Model_siteofficer->monthlyprojectreport($post_image);
+            //$this->session->set_flashdata('success','Post published');
+            redirect('SiteOfficer/monthlyprojectreport/');
     }
 
             

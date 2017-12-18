@@ -46,7 +46,7 @@
 
       
       <?php echo validation_errors(); ?>
-      <?php echo form_open_multipart('SiteOfficer/monthlyprojectreport'); ?>
+      <?php echo form_open_multipart('SiteOfficer/insertmonthlyprojectreport'); ?>
 
     <div class="row">
       
@@ -56,31 +56,18 @@
           <input type="text" class="form-control" id="exampleInput" placeholder="project id" name="projectid">
         </div>
 
-
-
         <div class="form-group">
           <label for="exampleInputEmail1">Description About the current status</label>
           <textarea rows="4" cols="50" type="text" class="form-control" id="exampleInputEmail1" placeholder="current status" name="description"></textarea> 
         </div>
 
-
-        <div class="form-group">
-          <label for="exampleInputEmail1">Date</label>
-          <input type="text" class="form-control" id="exampleInputEmail1" placeholder="date" name="date">
-        </div>
-
-
-
-
-
         </div>
         
         <div class="col-lg-9 dashed" style="border: dashed;">
 
-
         <div class="form-group">
           <label for="exampleInputEmail1">Image 1</label>
-          <input type="file" class="form-control-file" id="exampleInputFile" name="file1"aria-describedby="fileHelp">
+          <input type="file" class="form-control-file" id="exampleInputFile" name="file1" aria-describedby="fileHelp">
         
         </div>
 

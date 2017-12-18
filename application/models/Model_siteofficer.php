@@ -60,17 +60,22 @@ class Model_siteofficer extends CI_Model
 
 	}
 
-	function monthlyprojectreport($post_image)
+	function monthlyprojectreport()
 	{
 		$cur_date=date('y-m-d');
+
+		$config['upload_path'] = './uploads';
+		$config['allowed_types'] = '*';
+		$this->load->library('upload',$config);
+		$this->upload->do_upload('file_name');
+		$file_name = $this->upload->data();
+
 		$data = array(
 
-			'project_id' => $this->input->post('attendance',TRUE),
+			'project_id' => $this->input->post('projectid',TRUE),
 			'content' => $this->input->post('description',TRUE),
-			'date' => $this->input->$cur_date,
-			'image1'=>$post_image,
-
-
+			'date' => $cur_date,
+			'image1'=> $file_name['file_name']
 		);
 
 		return $this->db->insert('report_details',$data);

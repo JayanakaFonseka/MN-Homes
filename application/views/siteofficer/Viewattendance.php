@@ -71,8 +71,8 @@
                 <?php foreach ($records as $row): ?>
             <tr>
                 <td class="text-center"><?php echo $row->Nic; ?></td>
-                <td><?php echo $row->Attendance  ?></td>
-                <td><?php echo $row->Date ?></td>
+                <td><?php echo $row->attendance  ?></td>
+                <td><?php echo $row->date ?></td>
 
             </tr>
 

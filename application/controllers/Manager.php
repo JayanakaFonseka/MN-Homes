@@ -38,12 +38,12 @@ class Manager extends CI_Controller
           	if ($response){
 
              	$this->session->set_flashdata('msg','Registered Successfully..please Login');
-            	redirect('Home/Login');
+            	redirect('Manager/RegisterUser');
          	}
 
        		else{
              	$this->session->set_flashdata('msg','Something went wrong!!!');
-              	redirect('Home/Register');
+              	redirect('Manager/RegisterUser');
          	}
 
       }
