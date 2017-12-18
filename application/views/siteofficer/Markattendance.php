@@ -32,7 +32,7 @@
           <div class="list-group text-center" >
             <a href="<?php echo base_url('SiteOfficer/Home'); ?>" class="list-group-item ">Profile</a>
             <a href="<?php echo base_url('SiteOfficer/Markattendance'); ?>" class="list-group-item active">Mark Attendence</a>
-            <a href="<?php echo base_url('SiteOfficer/projectprogress'); ?>" class="list-group-item">Monthly Project Report</a>
+            <a href="<?php echo base_url('SiteOfficer/monthlyprojectreport'); ?>" class="list-group-item">Monthly Project Report</a>
             <a href="<?php echo base_url('SiteOfficer/inventryrequest'); ?>" class="list-group-item">Inventry Requests</a>
 
 
@@ -41,7 +41,7 @@
         <!-- Content Column -->
       <div class="col-lg-9 mb-4">
         <div class="welltextcenter">
-          <h2>
+          <h2 style="text-align: center;">
            Labour Attendance Management
           </h2>
         </div>
@@ -55,8 +55,8 @@
           </div>
           <div class="panel-body">
 
-            <?php echo form_open('SiteOfficer/insertattendance'); ?>
-            <form action="" method="post">
+
+            
               <table class="table table-striped">
 
                 <tr>
@@ -71,22 +71,31 @@
             </div>
                <?php if (count($records)): ?>
                 <?php foreach ($records as $row): ?>
+            <?php echo form_open('SiteOfficer/insertattendance'); ?>  
+ 
             <tr>
-                
+                <div class="form-group">              
                 <td class="text-center" >
-                  <input type="hidden" name="nic" value=<?php echo $row->Nic; ?>>
+                  <input type="hidden" name="nic" value= "<?php echo $row->Nic; ?>">
                  <?php echo $row->Nic; ?></td>
+               </div>
+            <div class="form-group">  
                 <td>
                     <input type="radio" name="attendace" value="present"> Present<br>
                     <input type="radio" name="attendace" value="absent">Absent<br>
                 </td>
+              </div>
+            <div class="form-group">  
                 <td>
                    <?php echo $cur_date; ?> 
                 </td>
-
+              </div>
+            <div class="form-group">  
                 <td><button type="button" class='btn btn-warning insertbtn'><a href="<?=base_url()?>Siteofficer/insertattendance">Add</a></button>
                 </td>
+              </div>
 
+            <?php echo form_close(); ?>
             </tr>
 
             <?php endforeach; ?>
@@ -95,8 +104,7 @@
         <?php endif ?> 
 
             </table>
-            </form>
-            <?php echo form_close(); ?>
+  
           </div>
         </div>
       </div>

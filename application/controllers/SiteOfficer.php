@@ -26,18 +26,15 @@ class SiteOfficer extends CI_Controller
     {
         $this->load->model('siteofficer_model');
     }
-    public function projectprogress()
+    public function monthlyprojectreport()
     {
-        $this->load->view('siteofficer/projectprogress');
+        $this->load->view('siteofficer/monthlyprojectreport');
     }
     public function inventryrequest()
     {
         $this->load->view('siteofficer/inventryrequest');
     }
-    public function monthlyprojectreport()
-    {
-        $this->load->view('siteofficer/monthlyprojectreport');
-    }
+
     public function addlabour()
     {
         $this->load->view('siteofficer/add');
