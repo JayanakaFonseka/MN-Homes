@@ -22,7 +22,7 @@
             <a href="<?php echo base_url('Manager/New_project'); ?>" class="list-group-item active">New Project</a>
             <a href="<?php echo base_url('Manager/viewProjects'); ?>" class="list-group-item">Project Details</a>
             <a href="<?php echo base_url('Manager/viewMessages'); ?>" class="list-group-item">User Masseges</a>
-            <a href="Manager/Home" class="list-group-item">View Reports</a>
+            <a href="<?php echo base_url('Manager/viewProjects2'); ?>" class="list-group-item">View Reports</a>
           </div>
         </div>
 
@@ -60,8 +60,8 @@
 			  
 			  <div class="form-group">
 			    <label for="exampleInputEmail1">Long Description</label>
-			    <textarea rows="7" cols="48" name="longDescription" form="usrform" placeholder=" Enter text here..."></textarea>
-			    <!-- <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Address" name="address"> -->
+			    <!-- <textarea rows="7" cols="48" name="longDescription" form="usrform" placeholder=" Enter text here..."></textarea> -->
+			    <textarea type="text" name="longDescription" class="form-control reserve-form empty iconified" id="longDescription" rows="7" cols="48" placeholder=" Enter text here..."></textarea>
 			  </div>
 
 			</div>

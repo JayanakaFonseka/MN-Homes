@@ -21,7 +21,7 @@
             <a href="<?php echo base_url('Manager/New_project'); ?>" class="list-group-item">New Project</a>
             <a href="<?php echo base_url('Manager/viewProjects'); ?>" class="list-group-item">Project Details</a>
             <a href="<?php echo base_url('Manager/viewMessages'); ?>" class="list-group-item">User Masseges</a>
-            <a href="Manager/Home" class="list-group-item">View Reports</a>
+            <a href="<?php echo base_url('Manager/viewProjects2'); ?>" class="list-group-item">View Reports</a>
           </div>
         </div>
 
