@@ -45,11 +45,11 @@ class Model_manager extends CI_Model
     function getProjects() {
 		
 		$this->db->select('*');
-		$this->db->from('projects');
-		$this->db->order_by('id');
-		$query = $this->db->get();
-        return $query->result(); 
-        
+        $this->db->from('projects');
+        $this->db->order_by('id');
+        $query = $this->db->get();
+        return $query->result();
+
     }
 
     public function edit($stu_id) {
@@ -118,6 +118,29 @@ class Model_manager extends CI_Model
 	    'message' => $this->input->post('message',TRUE) );
 
 	    $this->db->insert('messages',$data);
+    }
+
+
+    public function Addproject(){
+
+	    $data = array(
+
+		    'Title' => $this->input->post('title', TRUE),
+		    'ShortD' => $this->input->post('shortDescription',TRUE),
+		    'LongD' => $this->input->post('longDescription',TRUE),
+		    'customer_id' => $this->input->post('cus_id',TRUE) 
+		    );
+
+	    $this->db->insert('projects',$data);
+    }
+
+    function GetCustomer(){
+    	$this->db->select('*');
+		$this->db->from('employee');
+		$this->db->where('UserType', "customer");
+		$this->db->order_by('id');
+		$query = $this->db->get();
+        return $query->result();
     }
 
 }

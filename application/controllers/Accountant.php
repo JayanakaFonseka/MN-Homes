@@ -106,4 +106,12 @@ class Accountant extends CI_Controller
 
         }
     }
+
+    public function searchlabours() {
+        $search = $this->input->post('search');
+        $this->load->model('Model_accountant');
+        $data['records'] = $this->Model_accountant->Search($search);
+        $this->load->view('manager/ManageUsers', $data);
+
+    }
 }

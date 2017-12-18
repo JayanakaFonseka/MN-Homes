@@ -20,7 +20,7 @@
             <a href="<?php echo base_url('Manager/Home'); ?>" class="list-group-item active">Profile</a>
             <a href="<?php echo base_url('Manager/RegisterUser'); ?>" class="list-group-item">Register New User</a>
             <a href="<?php echo base_url('Manager/viewUsers'); ?>" class="list-group-item">Manage User</a>
-            <a href="<?php echo base_url('Manager/Home'); ?>" class="list-group-item">New Project</a>
+            <a href="<?php echo base_url('Manager/New_project'); ?>" class="list-group-item">New Project</a>
             <a href="<?php echo base_url('Manager/viewProjects'); ?>" class="list-group-item">Project Details</a>
             <a href="<?php echo base_url('Manager/viewMessages'); ?>" class="list-group-item">User Masseges</a>
             <a href="Manager/Home" class="list-group-item">View Reports</a>
